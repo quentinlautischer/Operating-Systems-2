@@ -1,0 +1,16 @@
+md5sum cmput379_assignment1.tar.gz
+tar -xvf memwatch-2.71.tar.gz 
+tar -xvf cmput379_assignment1.tar.gz 
+tar -xvf assn.1.test-dir.tar.gz 
+cd test-dir/
+make
+cp test sleep15 simple-test.config test1.config test2.config test-3.sh ../cmput379_assignement1/
+cd ..
+cp -R memwatch-2.71 cmput379_assignement1/
+cd cmput379_assignement1/
+make
+export PROCNANNYLOGS="./logfile.log"
+
+
+while(fgets(psLine, sizeof(psLine), fpin)){
+
