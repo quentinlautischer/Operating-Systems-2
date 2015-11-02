@@ -1,3 +1,26 @@
-static void clerkNannyParseConfigFile(void);
-static void clerkNannySendDataToClient(void);
-static void clerkNannyprintInfo(void);
+#ifndef CLERKNANNY_H 
+#define CLERKNANNY_H
+
+#include <stdio.h>
+#include <sys/types.h>
+#include <time.h>
+#include <string.h>
+
+#include "childNanny.h"
+#include "clientNanny.h"
+
+#include "memwatch.h"
+
+void clerkNannySetup(void);
+void clerkNannyTeardown(void);
+
+void clerkNannyReceiveData(char* s,  int lt);
+void clerkNannyParseConfigFile(int signum);
+void cleanLinkedList(void);
+void clerkNannySerializeConfigData(void);
+
+enum LogType { LOGFILE, SYSTEM, BOTH, DEBUG };
+
+#define DEBUGLOGGINFLAG 1
+
+#endif 

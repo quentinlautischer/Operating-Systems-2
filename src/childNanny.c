@@ -1,4 +1,17 @@
-//static means private
-void childNannyFlow(void);
-static void childNannySendDataToParent(void);
-static void childNannyreceiveDataFromParent(void);
+#include "childNanny.h"
+
+
+void childNannyFlow(void){
+	
+	//Warning supression until implemented
+	childNannySendDataToParent();
+	childNannyreceiveDataFromParent();
+}
+
+void childNannySendDataToParent(void){
+	return;
+}
+
+void childNannyreceiveDataFromParent(void){
+	return;
+}

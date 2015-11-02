@@ -1,4 +1,4 @@
-CC = gcc
+CC = gcc-4.8
 CFLAGS = -Wall
 MEMFLAGS = -DMEMWATCH -DMW_STDIO
 
@@ -18,4 +18,7 @@ $(TARGET):
 
 
 clean:
-	$(RM) $(TARGET)
+	$(RM) bin/$(TARGET)
+
+run:
+	bin/procnanny src/tmp/a2-simple-test.config
