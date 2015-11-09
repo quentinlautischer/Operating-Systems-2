@@ -5,10 +5,12 @@
 #include "clerkNanny.h"
 
 #include "memwatch.h"
+#include "vector.h"
 
 void clientNannyFlow(void);
 void clientNannyReceiveData(char *s);
 void clientNannyTeardown(void);
 void clientNannyCheckForProcesses(int signum);
+void clientNannyLoop(void);
 
 #endif 

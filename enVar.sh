@@ -1,0 +1,1 @@
+export PROCNANNYLOGS=./logfile.log

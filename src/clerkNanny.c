@@ -125,17 +125,17 @@ static void clerkNannyPrint(char* s, int lt){
 
 	switch (lt){
 		case LOGFILE:
-			fprintf(logFile,"%s %s - The Clerk \n",currentTime,s);
+			fprintf(logFile,"%s %s\n",currentTime,s);
 			break;
 		case SYSTEM:
-			fprintf(stdout,"%s %s - The Clerk \n",currentTime,s);
+			fprintf(stdout,"%s %s\n",currentTime,s);
 			break;
 		case BOTH:
-			fprintf(logFile,"%s %s - The Clerk \n",currentTime,s);
-			fprintf(stdout,"%s %s - The Clerk \n",currentTime,s);
+			fprintf(logFile,"%s %s\n",currentTime,s);
+			fprintf(stdout,"%s %s\n",currentTime,s);
 			break;
 		case DEBUG:
-			if(DEBUGLOGGINFLAG){fprintf(stdout,"%s %s - The Clerk \n",currentTime,s);}
+			if(DEBUGLOGGINFLAG){fprintf(stdout,"%s %s\n",currentTime,s);}
 			break;
 		default:
 			if(DEBUGLOGGINFLAG){fprintf(stdout,"Invalid logType provided \n");}

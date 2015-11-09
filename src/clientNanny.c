@@ -1,6 +1,7 @@
 #include "clientNanny.h"
 
 #include <unistd.h>
+#include "vector.h"
 
 static void clientNannySendDataToClerk(char* s, int lt);
 static void clientNannySendDataToChild(void);
@@ -10,16 +11,20 @@ char *psLine;
 FILE* fpin;
 extern FILE *popen();
 int killedProcesses = 0;
+VectorArray boredChildren;
 
 void clientNannyFlow(void){
 	msgData = (char*)malloc(1024 * sizeof(char));
 	psLine = (char*)malloc(1024 * sizeof(char));
+	vector_init(&boredChildren);
+
 
 	sprintf(msgData,"Info: Parent process is PID %d", getpid());
 	clientNannySendDataToClerk(msgData, LOGFILE);
 
 	clerkNannyParseConfigFile(SIGHUP);
 	clientNannyCheckForProcesses(SIGALRM);
+
 
 	//Do work
 	sprintf(psLine, "ps -C %s -o pid=", "");
@@ -32,7 +37,10 @@ void clientNannyFlow(void){
 	}
 }
 
+void clientNannyLoop(void){}
+
 void clientNannyTeardown(void){
+	vector_free(&boredChildren);
 	free(msgData);
 	free(psLine);
 	fclose(fpin);

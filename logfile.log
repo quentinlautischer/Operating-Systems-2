@@ -1,3 +1,3 @@
 Debug: Log PATH:./logfile.log
-[Mon Nov 09 13:25:06 MST 2015] Info: Parent process is PID 65744 - The Clerk 
-[Mon Nov 09 13:25:33 MST 2015] Info: Caught SIGINT(2). Exiting cleanly. 0 process(es) killed. - The Clerk 
+[Mon Nov 09 13:35:14 MST 2015] Info: Parent process is PID 66244 - The Clerk 
+[Mon Nov 09 13:45:59 MST 2015] Info: Caught SIGINT(2). Exiting cleanly. 0 process(es) killed. - The Clerk 
