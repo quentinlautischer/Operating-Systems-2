@@ -103,12 +103,12 @@ void clerkNannyParseConfigFile(int signum){
 				curr = (item *)malloc(sizeof(item));
 			    if( token != NULL ){
 			    	// clerkNannyPrint(token, DEBUG);
-			    	sprintf(curr->name, token);
+			    	sprintf(curr->name, "%s",token);
 			    }
 			    token = strtok( NULL, seps );
 			    if( token != NULL ){
 			    	// clerkNannyPrint(token, DEBUG);	
-			    	sprintf(curr->secs, token);
+			    	sprintf(curr->secs, "%s",token);
 			    }
 			    curr->next = head;
 			    head = curr;

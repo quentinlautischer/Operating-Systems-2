@@ -4,6 +4,10 @@
 #include "childNanny.h"
 #include "clerkNanny.h"
 
+
+#include <unistd.h>
+#include <signal.h>
+
 #include "memwatch.h"
 #include "vector.h"
 

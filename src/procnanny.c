@@ -15,6 +15,7 @@
 #include "clientNanny.h"
 
 #include "memwatch.h"
+#include "vector.h"
 
 #endif
 

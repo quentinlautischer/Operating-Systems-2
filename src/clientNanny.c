@@ -1,8 +1,5 @@
 #include "clientNanny.h"
 
-#include <unistd.h>
-#include "vector.h"
-
 static void clientNannySendDataToClerk(char* s, int lt);
 static void clientNannySendDataToChild(void);
 
