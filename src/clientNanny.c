@@ -44,7 +44,7 @@ void clientNannyFlow(void){
 	} else{
 		while(fgets(psLine, 1024, fpin)){
 			strtok(psLine, "\n");
-			sprintf(username, psLine);
+			sprintf(username, "%s", psLine);
 			clientNannySendDataToClerk(username, DEBUG);
 		}
 		fclose(fpin);	
@@ -92,8 +92,8 @@ void clientNannyCheckForProcesses(int signum){
 			clientNannySendDataToClerk(msgData, DEBUG);
 		} else {
 			char pidVal[150];
-			fgets(pidVal, sizeof(psLine), fpin);
-			clientNannySendDataToClerk(psLine, DEBUG);
+			fgets(pidVal, sizeof(pidVal), fpin);
+			clientNannySendDataToClerk(pidVal, DEBUG);
 			if(pidVal!=NULL){
 				strtok(psLine, "\n");
 				//IF PID NOT IN TABLE THEN START MONITORING
