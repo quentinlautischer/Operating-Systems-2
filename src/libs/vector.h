@@ -28,4 +28,6 @@ void vector_double_capacity_if_full(VectorArray *vector);
 
 void vector_free(VectorArray *vector);
 
+int vector_size(VectorArray *vector);
+
 #endif 

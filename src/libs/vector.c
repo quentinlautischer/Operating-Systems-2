@@ -45,6 +45,10 @@ void vector_double_capacity_if_full(VectorArray *vector) {
   }
 }
 
+int vector_size(VectorArray *vector) {
+	return vector->size;
+}
+
 void vector_free(VectorArray *vector) {
   free(vector->data);
 }

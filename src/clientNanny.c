@@ -85,30 +85,38 @@ void clientNannyCheckForProcesses(int signum){
 	curr = head;
 	while(curr){
 		sprintf(psLine, "pgrep -u %s %s", username, curr->name); //REMEMBER TO REPLACE TO USERNAME
-		clientNannySendDataToClerk(psLine, DEBUG);
+	//	clientNannySendDataToClerk(psLine, DEBUG);
 
 		if(!(fpin = popen(psLine, "r"))){
 			sprintf(msgData,"Error: Failed on popen of %s", psLine);
-			clientNannySendDataToClerk(msgData, DEBUG);
+			//clientNannySendDataToClerk(msgData, DEBUG);
 		} else {
 			char pidVal[150];
+			sprintf(pidVal, "%s", "0");	
 			fgets(pidVal, sizeof(pidVal), fpin);
-			clientNannySendDataToClerk(pidVal, DEBUG);
-			if(pidVal!=NULL){
+	//		clientNannySendDataToClerk(pidVal, DEBUG);
+			if(atoi(pidVal)){
 				strtok(psLine, "\n");
 				//IF PID NOT IN TABLE THEN START MONITORING
-				if(hashmap_get(monitoredPids, psLine, (void**)childPID) == -3){
+				if(hashmap_get(monitoredPids, psLine, (void**)childPID) == MAP_MISSING){
 					clientNannySendDataToClerk("not in table", DEBUG);
-				}
-					//IF EMPTYCHILD AVAILABLE USE
-					//ELSE CREATE A CHILD
-				//ELSE ALREADY BEING MONITORED.
+					sprintf(msgData, "%d", vector_size(&boredChildren));
+					clientNannySendDataToClerk(msgData, DEBUG);
+					if(vector_size(&boredChildren) == 0 ){
+						//THEN FORK A NEW CHILD
+					} else {
+						//USE EXISTING CHILD 
+						sprintf(childPID, "%d", vector_get(&vector, 0));
+						// TELL CHILDPID TO MON pidVal
+							
+					}
 				sprintf(msgData, "Info: Initializing monitoring of process '%s' (PID %s).", curr->name, psLine);
 				clientNannySendDataToClerk(msgData, DEBUG);					
 				clientNannySendDataToChild();
+			} //ALREADY BEING MONITORED.
 		
 			} else {
-				clientNannySendDataToClerk(psLine, DEBUG);
+			//	clientNannySendDataToClerk(psLine, DEBUG);
 				sprintf(msgData, "Info: No '%s' processes found.", curr->name);
 				clientNannySendDataToClerk(msgData, DEBUG);		
 			} 
