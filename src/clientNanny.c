@@ -5,11 +5,15 @@ static void clientNannySendDataToChild(void);
 
 char *msgData;
 char *psLine;
+char *childPID;
 char username[256];
 int killedProcesses = 0;
 VectorArray boredChildren;
+map_t monitoredPids; //MAP OF PID -> CHILD MON PID
 
 FILE* fpin;
+
+
 
 struct ConfigExtractedData {
 	char name[1024];
@@ -25,23 +29,26 @@ item * curr;
 void clientNannyFlow(void){
 	msgData = (char*)malloc(1024 * sizeof(char));
 	psLine = (char*)malloc(1024 * sizeof(char));
+	childPID = (char*)malloc(1024 * sizeof(char));
 	vector_init(&boredChildren);
+	monitoredPids = hashmap_new();
+	extern FILE *popen();
 
 	sprintf(msgData,"Info: Parent process is PID %d", getpid());
 	clientNannySendDataToClerk(msgData, LOGFILE);
 
 	//GET CURRENT USER NAME
-	// sprintf(psLine, "id -u -n");
-	// if(!(fpin = popen(psLine, "r"))){
-	// 	printf("Error: Failed on popen of %s", psLine);
-	// } else{
-	// 	while(fgets(psLine, 1024, fpin)){
-	// 		strtok(psLine, "\n");
-	// 		sprintf(username, psLine);
-	// 		clientNannySendDataToClerk(username, DEBUG);
-	// 	}
-	// 	fclose(fpin);	
-	// }
+	sprintf(psLine, "id -u -n");
+	if(!(fpin = popen(psLine, "r"))){
+		printf("Error: Failed on popen of %s", psLine);
+	} else{
+		while(fgets(psLine, 1024, fpin)){
+			strtok(psLine, "\n");
+			sprintf(username, psLine);
+			clientNannySendDataToClerk(username, DEBUG);
+		}
+		fclose(fpin);	
+	}
 
 	clerkNannyParseConfigFile(SIGHUP);//Should trigger its inital Check of processes
 }
@@ -49,7 +56,9 @@ void clientNannyFlow(void){
 void clientNannyLoop(void){}
 
 void clientNannyTeardown(void){
+	hashmap_free(monitoredPids);
 	vector_free(&boredChildren);
+	free(childPID);
 	free(msgData);
 	free(psLine);
 	fclose(fpin);
@@ -75,40 +84,38 @@ void clientNannyCheckForProcesses(int signum){
 
 	curr = head;
 	while(curr){
-		sprintf(psLine, "pgrep -u %s %s", "root", curr->name);
+		sprintf(psLine, "pgrep -u %s %s", username, curr->name); //REMEMBER TO REPLACE TO USERNAME
 		clientNannySendDataToClerk(psLine, DEBUG);
-
-		FILE* fpin;
-		extern FILE *popen();
-
 
 		if(!(fpin = popen(psLine, "r"))){
 			sprintf(msgData,"Error: Failed on popen of %s", psLine);
 			clientNannySendDataToClerk(msgData, DEBUG);
-		} else{
-			if(fpin!=NULL){
-				while(fgets(psLine, 1024, fpin)!=NULL){
-				
-					strtok(psLine, "\n");
-					sprintf(msgData, "Info: Initializing monitoring of process '%s' (PID %s).", curr->name, psLine);
-					clientNannySendDataToClerk(msgData, DEBUG);					
-					// pid_t proc_pid = (pid_t) strtol(psLine, NULL, 10);
-				
-
-					// forkProcMon(proc_pid, line);	
-					clientNannySendDataToChild();
+		} else {
+			char pidVal[150];
+			fgets(pidVal, sizeof(psLine), fpin);
+			clientNannySendDataToClerk(psLine, DEBUG);
+			if(pidVal!=NULL){
+				strtok(psLine, "\n");
+				//IF PID NOT IN TABLE THEN START MONITORING
+				if(hashmap_get(monitoredPids, psLine, (void**)childPID) == -3){
+					clientNannySendDataToClerk("not in table", DEBUG);
 				}
-				
+					//IF EMPTYCHILD AVAILABLE USE
+					//ELSE CREATE A CHILD
+				//ELSE ALREADY BEING MONITORED.
+				sprintf(msgData, "Info: Initializing monitoring of process '%s' (PID %s).", curr->name, psLine);
+				clientNannySendDataToClerk(msgData, DEBUG);					
+				clientNannySendDataToChild();
+		
 			} else {
+				clientNannySendDataToClerk(psLine, DEBUG);
 				sprintf(msgData, "Info: No '%s' processes found.", curr->name);
 				clientNannySendDataToClerk(msgData, DEBUG);		
 			} 
-				
-			
+			fclose(fpin);	
 		}
 		curr = curr->next;
-		}
-	fclose(fpin);	
+	}
 }
 
 

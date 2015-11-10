@@ -10,6 +10,7 @@
 
 #include "memwatch.h"
 #include "vector.h"
+#include "hashmap.h"
 
 void clientNannyFlow(void);
 void clientNannyReceiveData(char *s);

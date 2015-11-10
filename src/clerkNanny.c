@@ -9,8 +9,6 @@ char *configFileName;
 char currentTime[100];
 char *fileLine;
 
-
-
 FILE* logFile;
 FILE* configFile;
 
