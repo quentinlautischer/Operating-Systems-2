@@ -6,10 +6,10 @@ static void clientNannySendDataToChild(void);
 char *msgData;
 char *psLine;
 char username[256];
-FILE* fpin;
-
 int killedProcesses = 0;
 VectorArray boredChildren;
+
+FILE* fpin;
 
 struct ConfigExtractedData {
 	char name[1024];
@@ -25,7 +25,6 @@ item * curr;
 void clientNannyFlow(void){
 	msgData = (char*)malloc(1024 * sizeof(char));
 	psLine = (char*)malloc(1024 * sizeof(char));
-	extern FILE *popen();
 	vector_init(&boredChildren);
 
 	sprintf(msgData,"Info: Parent process is PID %d", getpid());
@@ -79,12 +78,17 @@ void clientNannyCheckForProcesses(int signum){
 		sprintf(psLine, "pgrep -u %s %s", "root", curr->name);
 		clientNannySendDataToClerk(psLine, DEBUG);
 
+		FILE* fpin;
+		extern FILE *popen();
+
+
 		if(!(fpin = popen(psLine, "r"))){
 			sprintf(msgData,"Error: Failed on popen of %s", psLine);
 			clientNannySendDataToClerk(msgData, DEBUG);
 		} else{
-			while(fgets(psLine, 1024, fpin)){
-				if(psLine){
+			if(fpin!=NULL){
+				while(fgets(psLine, 1024, fpin)!=NULL){
+				
 					strtok(psLine, "\n");
 					sprintf(msgData, "Info: Initializing monitoring of process '%s' (PID %s).", curr->name, psLine);
 					clientNannySendDataToClerk(msgData, DEBUG);					
@@ -92,18 +96,18 @@ void clientNannyCheckForProcesses(int signum){
 				
 
 					// forkProcMon(proc_pid, line);	
-				} else {
-					sprintf(msgData, "Info: No '%s' processes found.", curr->name);
-					clientNannySendDataToClerk(msgData, DEBUG);		
+					clientNannySendDataToChild();
 				}
-			}	
-			
-
-			clientNannySendDataToChild();
+				
+			} else {
+				sprintf(msgData, "Info: No '%s' processes found.", curr->name);
+				clientNannySendDataToClerk(msgData, DEBUG);		
+			} 
+				
 			
 		}
 		curr = curr->next;
-	}
+		}
 	fclose(fpin);	
 }
 
