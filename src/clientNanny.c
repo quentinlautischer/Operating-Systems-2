@@ -8,10 +8,15 @@ char *psLine;
 char *childPID;
 char username[256];
 int killedProcesses = 0;
+
+
+int fd[2];
+
 VectorArray boredChildren;
 map_t monitoredPids; //MAP OF PID -> CHILD MON PID
 
 FILE* fpin;
+
 
 
 
@@ -104,6 +109,8 @@ void clientNannyCheckForProcesses(int signum){
 					clientNannySendDataToClerk(msgData, DEBUG);
 					if(vector_size(&boredChildren) == 0 ){
 						//THEN FORK A NEW CHILD
+						pid_t proc_pid = (pid_t) strtol(pidVal, NULL, 10);
+						clientNannyForkProcMon();
 					} else {
 						//USE EXISTING CHILD 
 						sprintf(childPID, "%d", vector_get(&vector, 0));
@@ -123,6 +130,38 @@ void clientNannyCheckForProcesses(int signum){
 			fclose(fpin);	
 		}
 		curr = curr->next;
+	}
+}
+
+void clientNannyForkProcMon(void){
+	pid_t child_pid;
+	pipe(fd);
+	child_pid = fork();
+	if (child_pid >= 0){ /* fork success */
+		if (child_pid == 0) { /* Child */
+			pid_t proc_pid;
+			char* pid_name;
+			char* pid_secs;
+
+			close(fd[1]);
+			// n = read(fd[0], line, MAXLINE);
+			// write(STDOUT_FILENO, line, n);
+			while(1){
+
+
+				sleep(atoi(pid_secs));
+				int killStatus = kill(proc_pid, SIGKILL);
+				if (killStatus == 0) {
+					//ALERT PARENT
+				} else {
+					//ERROR HANDLE HERE
+				}
+			}
+		} else { /* Parent */
+		}
+	} else { /* Failure */
+		perror("Error: Fork Error");
+		exit(1);
 	}
 }
 

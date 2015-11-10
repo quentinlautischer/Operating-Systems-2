@@ -17,5 +17,6 @@ void clientNannyReceiveData(char *s);
 void clientNannyTeardown(void);
 void clientNannyCheckForProcesses(int signum);
 void clientNannyLoop(void);
+void clientNannyForkProcMon(pid_t proc_pid, char* pid_name, char* pid_secs);
 
 #endif 
