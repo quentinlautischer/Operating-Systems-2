@@ -52,11 +52,8 @@ void cleanLinkedList(void){
 void clerkNannySerializeConfigData(void){
 	curr = head;
 	while(curr){
-		clerkNannyPrint(curr->name, DEBUG);
-		clerkNannyPrint(curr->secs, DEBUG);
-
-		
-
+		sprintf(fileLine, "%s %s", curr->name,curr->secs);
+		clerkNannyPrint(fileLine, DEBUG);
 		
 		curr = curr->next;
 	}
@@ -116,8 +113,9 @@ void clerkNannyParseConfigFile(int signum){
 		}
 		fclose(configFile);			
 	}
-	clerkNannySerializeConfigData();
+	// clerkNannySerializeConfigData();
 	clerkNannySendDataToClient("");
+	clientNannyCheckForProcesses(SIGALRM);
 }
 
 static void clerkNannyPrint(char* s, int lt){
