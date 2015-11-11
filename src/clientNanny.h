@@ -4,19 +4,21 @@
 #include "childNanny.h"
 #include "clerkNanny.h"
 
-
 #include <unistd.h>
 #include <signal.h>
+#include <fcntl.h>
+#include <sys/stat.h>
 
 #include "memwatch.h"
-#include "vector.h"
-#include "hashmap.h"
+#include "monLL.h"
+#include "linkedList.h"
+
 
 void clientNannyFlow(void);
 void clientNannyReceiveData(char *s);
 void clientNannyTeardown(void);
 void clientNannyCheckForProcesses(int signum);
 void clientNannyLoop(void);
-void clientNannyForkProcMon(pid_t proc_pid, char* pid_name, char* pid_secs);
+void clientNannyForkProcMon(void);
 
 #endif 

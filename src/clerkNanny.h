@@ -11,6 +11,8 @@
 
 #include "memwatch.h"
 
+#define MAXLINE 256
+
 void clerkNannySetup(void);
 void clerkNannyTeardown(void);
 

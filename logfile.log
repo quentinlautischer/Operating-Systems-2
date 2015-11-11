@@ -1,3 +1,6 @@
 Debug: Log PATH:./logfile.log
-[Mon Nov 09 23:23:29 MST 2015] Info: Parent process is PID 21811
-[Mon Nov 09 23:23:35 MST 2015] Info: Caught SIGINT(2). Exiting cleanly. 0 process(es) killed.
+[Tue Nov 10 20:37:43 MST 2015] Info: Parent process is PID 26471
+[Tue Nov 10 20:38:31 MST 2015] Info: Caught SIGINT(2). Exiting cleanly. 1 process(es) killed.
+Debug: Log PATH:./logfile.log
+[Tue Nov 10 20:37:43 MST 2015] Info: Parent process is PID 26471
+[Tue Nov 10 20:38:31 MST 2015] Info: Caught SIGINT(2). Exiting cleanly. 0 process(es) killed.

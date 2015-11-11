@@ -2,7 +2,7 @@ CC = gcc-4.8
 CFLAGS = -Wall
 MEMFLAGS = -DMEMWATCH -DMW_STDIO
 
-INCLUDES = -I memwatch-2.71/ memwatch-2.71/memwatch.c  -I src/libs/ src/libs/vector.c -I src/libs/ src/libs/hashmap.c
+INCLUDES = -I memwatch-2.71/ memwatch-2.71/memwatch.c  -I src/libs/ src/libs/linkedList.c -I src/libs/ src/libs/monLL.c
 
 TARGET = procnanny
 
