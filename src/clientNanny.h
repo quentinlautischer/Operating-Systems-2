@@ -20,5 +20,8 @@ void clientNannyTeardown(void);
 void clientNannyCheckForProcesses(int signum);
 void clientNannyLoop(void);
 void clientNannyForkProcMon(void);
+void unlinkFIFOandKillChildren(void);
+void killOldProcnannys(void);
+
 
 #endif 

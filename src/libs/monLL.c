@@ -4,6 +4,8 @@ typedef struct monitoringChildren MonChild;
 struct monitoringChildren {
     pid_t monPID;
     pid_t childPID;
+    char name[1024]; 
+    char secs[1024];
     MonChild *next;
 };
 
@@ -19,12 +21,16 @@ int monLL_len(MonChild *node_head)
     return len;
 }
  
-void monLL_push(MonChild **node_head, pid_t monPID, pid_t childPID)
+void monLL_push(MonChild **node_head, pid_t monPID, pid_t childPID, char name[1024], char secs[1024])
 {
     MonChild *node_new = malloc(sizeof(MonChild));
      
     node_new -> monPID = monPID;
     node_new -> childPID = childPID;
+    sprintf(node_new->name, "%s", name);
+    sprintf(node_new->secs, "%s", secs);
+    // node_new -> name = name;
+    // node_new -> secs = secs;
 
     node_new -> next = *node_head;
     *node_head = node_new;
@@ -67,19 +73,19 @@ void monLL_clear(MonChild **node_head)
         monLL_pop(node_head);
 }
  
-void monLL_snoc(MonChild **node_head, pid_t monPID, pid_t childPID)
+void monLL_snoc(MonChild **node_head, pid_t monPID, pid_t childPID, char name[1024], char secs[1024])
 {
     MonChild *node_curr = *node_head;
      
     if(!node_curr)
-        monLL_push(node_head, monPID, childPID);
+        monLL_push(node_head, monPID, childPID, name, secs);
     else
     {
         //find the last node
         while(node_curr -> next)
             node_curr = node_curr -> next;
         //build the MonChild after it
-        monLL_push(&(node_curr -> next), monPID, childPID);
+        monLL_push(&(node_curr -> next), monPID, childPID, name, secs);
     }
 }
  

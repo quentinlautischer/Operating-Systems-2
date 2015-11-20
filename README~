@@ -16,6 +16,6 @@ interpreted as a proccess to monitor.
 
 Make file specifies that the memwatch folder should be located in root.
 
-Make run to start program put config file in /tmp/
+Make run
  
 //http://deans-avr-tutorials.googlecode.com/svn/trunk/ManagingLargeProjects/Output/ManagingLargeProjects.pdf

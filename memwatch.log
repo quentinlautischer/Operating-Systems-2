@@ -5064,3 +5064,2442 @@ Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
 mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
 
 NULL free: <14> src/clientNanny.c(197), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 14:24:15 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <14> src/clientNanny.c(197), NULL pointer free'd
+NULL free: <18> src/clientNanny.c(197), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(197), NULL pointer free'd
+NULL free: <26> src/clientNanny.c(197), NULL pointer free'd
+WILD free: <29> src/clientNanny.c(196), unknown pointer 0x1c48640
+NULL free: <30> src/clientNanny.c(197), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 14:54:11 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <14> src/clientNanny.c(181), NULL pointer free'd
+WILD free: <17> src/clientNanny.c(180), unknown pointer 0x1a94390
+NULL free: <18> src/clientNanny.c(181), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(181), NULL pointer free'd
+NULL free: <26> src/clientNanny.c(181), NULL pointer free'd
+NULL free: <30> src/clientNanny.c(181), NULL pointer free'd
+NULL free: <34> src/clientNanny.c(181), NULL pointer free'd
+NULL free: <38> src/clientNanny.c(181), NULL pointer free'd
+NULL free: <42> src/clientNanny.c(181), NULL pointer free'd
+NULL free: <46> src/clientNanny.c(181), NULL pointer free'd
+NULL free: <50> src/clientNanny.c(181), NULL pointer free'd
+WILD free: <53> src/clientNanny.c(180), unknown pointer 0x1a94410
+NULL free: <54> src/clientNanny.c(181), NULL pointer free'd
+NULL free: <58> src/clientNanny.c(181), NULL pointer free'd
+NULL free: <62> src/clientNanny.c(181), NULL pointer free'd
+NULL free: <66> src/clientNanny.c(181), NULL pointer free'd
+NULL free: <70> src/clientNanny.c(181), NULL pointer free'd
+NULL free: <74> src/clientNanny.c(181), NULL pointer free'd
+NULL free: <78> src/clientNanny.c(181), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 14:54:11 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <14> src/clientNanny.c(181), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 15:17:14 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <14> src/clientNanny.c(188), NULL pointer free'd
+WILD free: <17> src/clientNanny.c(187), unknown pointer 0xea0390
+NULL free: <18> src/clientNanny.c(188), NULL pointer free'd
+WILD free: <21> src/clientNanny.c(187), unknown pointer 0xea0390
+NULL free: <22> src/clientNanny.c(188), NULL pointer free'd
+WILD free: <25> src/clientNanny.c(187), unknown pointer 0xea0390
+NULL free: <26> src/clientNanny.c(188), NULL pointer free'd
+WILD free: <29> src/clientNanny.c(187), unknown pointer 0xea0390
+NULL free: <30> src/clientNanny.c(188), NULL pointer free'd
+WILD free: <33> src/clientNanny.c(187), unknown pointer 0xea0390
+NULL free: <34> src/clientNanny.c(188), NULL pointer free'd
+WILD free: <37> src/clientNanny.c(187), unknown pointer 0xea0390
+NULL free: <38> src/clientNanny.c(188), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 15:21:49 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <14> src/clientNanny.c(188), NULL pointer free'd
+WILD free: <17> src/clientNanny.c(187), unknown pointer 0xeed390
+NULL free: <18> src/clientNanny.c(188), NULL pointer free'd
+WILD free: <21> src/clientNanny.c(187), unknown pointer 0xeed390
+NULL free: <22> src/clientNanny.c(188), NULL pointer free'd
+WILD free: <25> src/clientNanny.c(187), unknown pointer 0xeed390
+NULL free: <26> src/clientNanny.c(188), NULL pointer free'd
+WILD free: <29> src/clientNanny.c(187), unknown pointer 0xeed390
+NULL free: <30> src/clientNanny.c(188), NULL pointer free'd
+WILD free: <33> src/clientNanny.c(187), unknown pointer 0xeed390
+NULL free: <34> src/clientNanny.c(188), NULL pointer free'd
+WILD free: <37> src/clientNanny.c(187), unknown pointer 0xeed390
+NULL free: <38> src/clientNanny.c(188), NULL pointer free'd
+WILD free: <41> src/clientNanny.c(187), unknown pointer 0xeed390
+NULL free: <42> src/clientNanny.c(188), NULL pointer free'd
+WILD free: <45> src/clientNanny.c(187), unknown pointer 0xeed390
+NULL free: <46> src/clientNanny.c(188), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 15:30:14 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <14> src/clientNanny.c(188), NULL pointer free'd
+WILD free: <17> src/clientNanny.c(187), unknown pointer 0x2541390
+NULL free: <18> src/clientNanny.c(188), NULL pointer free'd
+WILD free: <21> src/clientNanny.c(187), unknown pointer 0x2541390
+NULL free: <22> src/clientNanny.c(188), NULL pointer free'd
+WILD free: <25> src/clientNanny.c(187), unknown pointer 0x2541390
+NULL free: <26> src/clientNanny.c(188), NULL pointer free'd
+WILD free: <29> src/clientNanny.c(187), unknown pointer 0x2541390
+NULL free: <30> src/clientNanny.c(188), NULL pointer free'd
+WILD free: <33> src/clientNanny.c(187), unknown pointer 0x2541390
+NULL free: <34> src/clientNanny.c(188), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 15:33:49 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <14> src/clientNanny.c(188), NULL pointer free'd
+WILD free: <17> src/clientNanny.c(187), unknown pointer 0x21a0390
+NULL free: <18> src/clientNanny.c(188), NULL pointer free'd
+WILD free: <21> src/clientNanny.c(187), unknown pointer 0x21a0390
+NULL free: <22> src/clientNanny.c(188), NULL pointer free'd
+WILD free: <25> src/clientNanny.c(187), unknown pointer 0x21a0390
+NULL free: <26> src/clientNanny.c(188), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 15:33:49 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <14> src/clientNanny.c(188), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 15:36:14 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <14> src/clientNanny.c(188), NULL pointer free'd
+WILD free: <17> src/clientNanny.c(187), unknown pointer 0x1f3e390
+NULL free: <18> src/clientNanny.c(188), NULL pointer free'd
+WILD free: <21> src/clientNanny.c(187), unknown pointer 0x1f3e390
+NULL free: <22> src/clientNanny.c(188), NULL pointer free'd
+WILD free: <25> src/clientNanny.c(187), unknown pointer 0x1f3e390
+NULL free: <26> src/clientNanny.c(188), NULL pointer free'd
+WILD free: <29> src/clientNanny.c(187), unknown pointer 0x1f3e390
+NULL free: <30> src/clientNanny.c(188), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 15:39:15 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <14> src/clientNanny.c(188), NULL pointer free'd
+WILD free: <17> src/clientNanny.c(187), unknown pointer 0xc0a390
+NULL free: <18> src/clientNanny.c(188), NULL pointer free'd
+WILD free: <21> src/clientNanny.c(187), unknown pointer 0xc0a390
+NULL free: <22> src/clientNanny.c(188), NULL pointer free'd
+WILD free: <25> src/clientNanny.c(187), unknown pointer 0xc0a390
+NULL free: <26> src/clientNanny.c(188), NULL pointer free'd
+WILD free: <29> src/clientNanny.c(187), unknown pointer 0xc0a390
+NULL free: <30> src/clientNanny.c(188), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 15:40:38 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <14> src/clientNanny.c(188), NULL pointer free'd
+WILD free: <17> src/clientNanny.c(187), unknown pointer 0x233d390
+NULL free: <18> src/clientNanny.c(188), NULL pointer free'd
+WILD free: <21> src/clientNanny.c(187), unknown pointer 0x233d390
+NULL free: <22> src/clientNanny.c(188), NULL pointer free'd
+WILD free: <25> src/clientNanny.c(187), unknown pointer 0x233d390
+NULL free: <26> src/clientNanny.c(188), NULL pointer free'd
+WILD free: <29> src/clientNanny.c(187), unknown pointer 0x233d390
+NULL free: <30> src/clientNanny.c(188), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 15:43:37 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <14> src/clientNanny.c(188), NULL pointer free'd
+WILD free: <17> src/clientNanny.c(187), unknown pointer 0x1179390
+NULL free: <18> src/clientNanny.c(188), NULL pointer free'd
+WILD free: <21> src/clientNanny.c(187), unknown pointer 0x1179390
+NULL free: <22> src/clientNanny.c(188), NULL pointer free'd
+WILD free: <25> src/clientNanny.c(187), unknown pointer 0x1179390
+NULL free: <26> src/clientNanny.c(188), NULL pointer free'd
+WILD free: <29> src/clientNanny.c(187), unknown pointer 0x1179390
+NULL free: <30> src/clientNanny.c(188), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 15:45:53 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <14> src/clientNanny.c(188), NULL pointer free'd
+WILD free: <17> src/clientNanny.c(187), unknown pointer 0x1e7d390
+NULL free: <18> src/clientNanny.c(188), NULL pointer free'd
+WILD free: <21> src/clientNanny.c(187), unknown pointer 0x1e7d390
+NULL free: <22> src/clientNanny.c(188), NULL pointer free'd
+WILD free: <25> src/clientNanny.c(187), unknown pointer 0x1e7d390
+NULL free: <26> src/clientNanny.c(188), NULL pointer free'd
+WILD free: <29> src/clientNanny.c(187), unknown pointer 0x1e7d390
+NULL free: <30> src/clientNanny.c(188), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 15:45:53 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <14> src/clientNanny.c(188), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 15:55:36 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <14> src/clientNanny.c(187), NULL pointer free'd
+NULL free: <18> src/clientNanny.c(187), NULL pointer free'd
+WILD free: <21> src/clientNanny.c(186), unknown pointer 0x14eb390
+NULL free: <22> src/clientNanny.c(187), NULL pointer free'd
+WILD free: <25> src/clientNanny.c(186), unknown pointer 0x14eb390
+NULL free: <26> src/clientNanny.c(187), NULL pointer free'd
+WILD free: <29> src/clientNanny.c(186), unknown pointer 0x14eb390
+NULL free: <30> src/clientNanny.c(187), NULL pointer free'd
+WILD free: <33> src/clientNanny.c(186), unknown pointer 0x14eb390
+NULL free: <34> src/clientNanny.c(187), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 15:55:36 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <14> src/clientNanny.c(187), NULL pointer free'd
+NULL free: <18> src/clientNanny.c(187), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 15:58:13 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <14> src/clientNanny.c(187), NULL pointer free'd
+WILD free: <17> src/clientNanny.c(186), unknown pointer 0x13b7390
+NULL free: <18> src/clientNanny.c(187), NULL pointer free'd
+WILD free: <21> src/clientNanny.c(186), unknown pointer 0x13b7390
+NULL free: <22> src/clientNanny.c(187), NULL pointer free'd
+WILD free: <25> src/clientNanny.c(186), unknown pointer 0x13b7390
+NULL free: <26> src/clientNanny.c(187), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 15:58:13 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <14> src/clientNanny.c(187), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 16:00:07 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 16:00:22 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <14> src/clientNanny.c(187), NULL pointer free'd
+WILD free: <17> src/clientNanny.c(186), unknown pointer 0x1c51390
+NULL free: <18> src/clientNanny.c(187), NULL pointer free'd
+WILD free: <21> src/clientNanny.c(186), unknown pointer 0x1c51390
+NULL free: <22> src/clientNanny.c(187), NULL pointer free'd
+WILD free: <25> src/clientNanny.c(186), unknown pointer 0x1c51390
+NULL free: <26> src/clientNanny.c(187), NULL pointer free'd
+WILD free: <29> src/clientNanny.c(186), unknown pointer 0x1c51390
+NULL free: <30> src/clientNanny.c(187), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 16:00:22 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <14> src/clientNanny.c(187), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 16:00:55 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <14> src/clientNanny.c(187), NULL pointer free'd
+WILD free: <17> src/clientNanny.c(186), unknown pointer 0x1190390
+NULL free: <18> src/clientNanny.c(187), NULL pointer free'd
+WILD free: <21> src/clientNanny.c(186), unknown pointer 0x1190390
+NULL free: <22> src/clientNanny.c(187), NULL pointer free'd
+WILD free: <25> src/clientNanny.c(186), unknown pointer 0x1190390
+NULL free: <26> src/clientNanny.c(187), NULL pointer free'd
+WILD free: <29> src/clientNanny.c(186), unknown pointer 0x1190390
+NULL free: <30> src/clientNanny.c(187), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 16:00:55 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <14> src/clientNanny.c(187), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 16:06:25 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <14> src/clientNanny.c(187), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 16:07:45 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <14> src/clientNanny.c(187), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 16:08:29 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <14> src/clientNanny.c(187), NULL pointer free'd
+WILD free: <17> src/clientNanny.c(186), unknown pointer 0xf84390
+NULL free: <18> src/clientNanny.c(187), NULL pointer free'd
+WILD free: <21> src/clientNanny.c(186), unknown pointer 0xf84390
+NULL free: <22> src/clientNanny.c(187), NULL pointer free'd
+WILD free: <25> src/clientNanny.c(186), unknown pointer 0xf84390
+NULL free: <26> src/clientNanny.c(187), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 16:08:29 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <14> src/clientNanny.c(187), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 16:09:40 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <14> src/clientNanny.c(187), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 16:16:49 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <14> src/clientNanny.c(187), NULL pointer free'd
+WILD free: <17> src/clientNanny.c(186), unknown pointer 0x1a74390
+NULL free: <18> src/clientNanny.c(187), NULL pointer free'd
+WILD free: <21> src/clientNanny.c(186), unknown pointer 0x1a74390
+NULL free: <22> src/clientNanny.c(187), NULL pointer free'd
+WILD free: <25> src/clientNanny.c(186), unknown pointer 0x1a74390
+NULL free: <26> src/clientNanny.c(187), NULL pointer free'd
+WILD free: <29> src/clientNanny.c(186), unknown pointer 0x1a74390
+NULL free: <30> src/clientNanny.c(187), NULL pointer free'd
+WILD free: <33> src/clientNanny.c(186), unknown pointer 0x1a74390
+NULL free: <34> src/clientNanny.c(187), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 16:16:49 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <14> src/clientNanny.c(187), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 16:26:30 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <14> src/clientNanny.c(187), NULL pointer free'd
+WILD free: <17> src/clientNanny.c(186), unknown pointer 0x18b1390
+NULL free: <18> src/clientNanny.c(187), NULL pointer free'd
+WILD free: <21> src/clientNanny.c(186), unknown pointer 0x18b1390
+NULL free: <22> src/clientNanny.c(187), NULL pointer free'd
+WILD free: <25> src/clientNanny.c(186), unknown pointer 0x18b1390
+NULL free: <26> src/clientNanny.c(187), NULL pointer free'd
+WILD free: <29> src/clientNanny.c(186), unknown pointer 0x18b1390
+NULL free: <30> src/clientNanny.c(187), NULL pointer free'd
+WILD free: <33> src/clientNanny.c(186), unknown pointer 0x18b1390
+NULL free: <34> src/clientNanny.c(187), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 16:31:48 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <14> src/clientNanny.c(188), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 16:32:21 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <14> src/clientNanny.c(188), NULL pointer free'd
+WILD free: <17> src/clientNanny.c(187), unknown pointer 0x1e63390
+NULL free: <18> src/clientNanny.c(188), NULL pointer free'd
+WILD free: <21> src/clientNanny.c(187), unknown pointer 0x1e63390
+NULL free: <22> src/clientNanny.c(188), NULL pointer free'd
+WILD free: <25> src/clientNanny.c(187), unknown pointer 0x1e63390
+NULL free: <26> src/clientNanny.c(188), NULL pointer free'd
+WILD free: <29> src/clientNanny.c(187), unknown pointer 0x1e63390
+NULL free: <30> src/clientNanny.c(188), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 16:34:35 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <14> src/clientNanny.c(188), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 16:39:37 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <14> src/clientNanny.c(188), NULL pointer free'd
+WILD free: <17> src/clientNanny.c(187), unknown pointer 0x927390
+NULL free: <18> src/clientNanny.c(188), NULL pointer free'd
+WILD free: <21> src/clientNanny.c(187), unknown pointer 0x927390
+NULL free: <22> src/clientNanny.c(188), NULL pointer free'd
+WILD free: <25> src/clientNanny.c(187), unknown pointer 0x927390
+NULL free: <26> src/clientNanny.c(188), NULL pointer free'd
+WILD free: <29> src/clientNanny.c(187), unknown pointer 0x927390
+NULL free: <30> src/clientNanny.c(188), NULL pointer free'd
+WILD free: <33> src/clientNanny.c(187), unknown pointer 0x927390
+NULL free: <34> src/clientNanny.c(188), NULL pointer free'd
+WILD free: <37> src/clientNanny.c(187), unknown pointer 0x927390
+NULL free: <38> src/clientNanny.c(188), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 16:42:27 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <14> src/clientNanny.c(188), NULL pointer free'd
+NULL free: <18> src/clientNanny.c(188), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 16:57:37 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <14> src/clientNanny.c(188), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 16:57:37 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <14> src/clientNanny.c(188), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 16:58:32 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <14> src/clientNanny.c(188), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 16:58:32 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <14> src/clientNanny.c(188), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 17:00:07 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <14> src/clientNanny.c(188), NULL pointer free'd
+NULL free: <18> src/clientNanny.c(188), NULL pointer free'd
+WILD free: <21> src/clientNanny.c(187), unknown pointer 0x990390
+NULL free: <22> src/clientNanny.c(188), NULL pointer free'd
+WILD free: <25> src/clientNanny.c(187), unknown pointer 0x990390
+NULL free: <26> src/clientNanny.c(188), NULL pointer free'd
+WILD free: <29> src/clientNanny.c(187), unknown pointer 0x990390
+NULL free: <30> src/clientNanny.c(188), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 17:00:07 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <14> src/clientNanny.c(188), NULL pointer free'd
+NULL free: <18> src/clientNanny.c(188), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 17:04:38 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <14> src/clientNanny.c(188), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 17:21:43 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(223), NULL pointer free'd
+NULL free: <14> src/clientNanny.c(223), NULL pointer free'd
+NULL free: <16> src/clientNanny.c(223), NULL pointer free'd
+NULL free: <18> src/clientNanny.c(223), NULL pointer free'd
+NULL free: <20> src/clientNanny.c(223), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 17:23:56 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(223), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(84), NULL pointer free'd
+NULL free: <24> src/clientNanny.c(102), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 17:25:31 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(223), NULL pointer free'd
+NULL free: <14> src/clientNanny.c(223), NULL pointer free'd
+NULL free: <16> src/clientNanny.c(223), NULL pointer free'd
+NULL free: <18> src/clientNanny.c(223), NULL pointer free'd
+NULL free: <20> src/clientNanny.c(223), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 17:25:31 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(223), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(84), NULL pointer free'd
+NULL free: <24> src/clientNanny.c(102), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 17:32:46 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(223), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(84), NULL pointer free'd
+NULL free: <24> src/clientNanny.c(102), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 17:37:09 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(222), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(84), NULL pointer free'd
+NULL free: <24> src/clientNanny.c(102), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 17:45:41 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(223), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(84), NULL pointer free'd
+NULL free: <24> src/clientNanny.c(102), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 17:48:01 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(224), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(84), NULL pointer free'd
+NULL free: <24> src/clientNanny.c(102), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 18:00:02 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(222), NULL pointer free'd
+NULL free: <14> src/clientNanny.c(222), NULL pointer free'd
+NULL free: <24> src/clientNanny.c(84), NULL pointer free'd
+NULL free: <26> src/clientNanny.c(102), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 18:14:50 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(222), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(84), NULL pointer free'd
+NULL free: <24> src/clientNanny.c(102), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 18:18:47 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(223), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(84), NULL pointer free'd
+NULL free: <24> src/clientNanny.c(102), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 18:21:22 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(224), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(84), NULL pointer free'd
+NULL free: <24> src/clientNanny.c(102), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 18:24:48 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(224), NULL pointer free'd
+NULL free: <14> src/clientNanny.c(224), NULL pointer free'd
+NULL free: <24> src/clientNanny.c(84), NULL pointer free'd
+NULL free: <26> src/clientNanny.c(102), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 18:27:38 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(225), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(84), NULL pointer free'd
+NULL free: <24> src/clientNanny.c(102), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 18:33:08 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(225), NULL pointer free'd
+NULL free: <14> src/clientNanny.c(225), NULL pointer free'd
+NULL free: <24> src/clientNanny.c(84), NULL pointer free'd
+NULL free: <26> src/clientNanny.c(102), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 18:35:08 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(225), NULL pointer free'd
+NULL free: <14> src/clientNanny.c(225), NULL pointer free'd
+NULL free: <24> src/clientNanny.c(84), NULL pointer free'd
+NULL free: <26> src/clientNanny.c(102), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 18:41:27 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(225), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 18:43:39 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(228), NULL pointer free'd
+NULL free: <20> src/clientNanny.c(87), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(105), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 18:51:30 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(228), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 18:52:07 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(228), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 18:52:20 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(228), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 18:52:32 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(228), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 18:53:15 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(228), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 18:54:05 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(228), NULL pointer free'd
+NULL free: <14> src/clientNanny.c(228), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 18:55:11 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(228), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 18:58:13 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(228), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 18:59:09 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(228), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 18:59:17 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(228), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 19:00:14 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(228), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 19:01:39 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(228), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 19:02:33 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(228), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 19:03:27 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(228), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 19:05:49 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(228), NULL pointer free'd
+NULL free: <20> src/clientNanny.c(87), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(105), NULL pointer free'd
+
+Stopped at Wed Nov 11 19:06:32 2015
+
+unfreed: <21> src/clientNanny.c(89), 16 bytes at 0x10de480  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <19> src/clientNanny.c(71), 16 bytes at 0x10de420  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <11> src/clientNanny.c(189), 16 bytes at 0x10de3c0  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <6> src/clientNanny.c(44), 1024 bytes at 0x10dfe70  	{34 30 32 37 70 32 63 00 FE FE FE FE FE FE FE FE 4027p2c.........}
+
+Memory usage statistics (global):
+ N)umber of allocations made: 13
+ L)argest memory usage      : 13390
+ T)otal of all alloc() calls: 13422
+ U)nfreed bytes totals      : 1072
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 19:05:49 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(228), NULL pointer free'd
+NULL free: <14> src/clientNanny.c(228), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(87), NULL pointer free'd
+NULL free: <24> src/clientNanny.c(105), NULL pointer free'd
+
+Stopped at Wed Nov 11 19:06:32 2015
+
+unfreed: <23> src/clientNanny.c(89), 16 bytes at 0x10de480  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <21> src/clientNanny.c(71), 16 bytes at 0x10de420  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <13> src/clientNanny.c(189), 16 bytes at 0x10e03f0  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <11> src/clientNanny.c(189), 16 bytes at 0x10de3c0  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <6> src/clientNanny.c(44), 1024 bytes at 0x10dfe70  	{34 30 32 37 63 32 70 00 FE FE FE FE FE FE FE FE 4027c2p.........}
+
+Memory usage statistics (global):
+ N)umber of allocations made: 14
+ L)argest memory usage      : 13406
+ T)otal of all alloc() calls: 13438
+ U)nfreed bytes totals      : 1088
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 19:08:02 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(228), NULL pointer free'd
+
+Stopped at Wed Nov 11 19:08:29 2015
+
+unfreed: <11> src/clientNanny.c(189), 16 bytes at 0x237c3c0  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <10> src/clerkNanny.c(97), 2056 bytes at 0x237fe20  	{73 6C 65 65 70 31 35 00 FE FE FE FE FE FE FE FE sleep15.........}
+unfreed: <9> src/clerkNanny.c(97), 2056 bytes at 0x237f5c0  	{74 65 73 74 31 00 FE FE FE FE FE FE FE FE FE FE test1...........}
+unfreed: <8> src/clerkNanny.c(97), 2056 bytes at 0x237ed60  	{74 65 73 74 00 FE FE FE FE FE FE FE FE FE FE FE test............}
+unfreed: <7> src/clerkNanny.c(97), 2056 bytes at 0x237e500  	{61 2E 6F 75 74 00 FE FE FE FE FE FE FE FE FE FE a.out...........}
+unfreed: <6> src/clientNanny.c(44), 1024 bytes at 0x237de70  	{34 31 38 38 70 32 63 00 FE FE FE FE FE FE FE FE 4188p2c.........}
+unfreed: <5> src/clientNanny.c(38), 1024 bytes at 0x237da20  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <4> src/clientNanny.c(37), 1024 bytes at 0x237d5d0  	{70 67 72 65 70 20 2D 75 20 6C 61 75 74 69 73 63 pgrep -u lautisc}
+unfreed: <3> src/clientNanny.c(36), 1024 bytes at 0x237d180  	{34 31 38 34 0A 00 4F 57 53 20 4D 59 5F 50 49 44 4184..OWS MY_PID}
+unfreed: <2> src/clerkNanny.c(28), 1024 bytes at 0x237caf0  	{73 6C 65 65 70 31 35 00 31 30 00 FE FE FE FE FE sleep15.10......}
+unfreed: <1> src/procnanny.c(38), 30 bytes at 0x237c350  	{73 72 63 2F 74 6D 70 2F 61 32 2D 73 69 6D 70 6C src/tmp/a2-simpl}
+
+Memory usage statistics (global):
+ N)umber of allocations made: 11
+ L)argest memory usage      : 13390
+ T)otal of all alloc() calls: 13390
+ U)nfreed bytes totals      : 13390
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 19:08:02 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(228), NULL pointer free'd
+
+Stopped at Wed Nov 11 19:08:29 2015
+
+unfreed: <11> src/clientNanny.c(189), 16 bytes at 0x237c3c0  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <10> src/clerkNanny.c(97), 2056 bytes at 0x237fe20  	{73 6C 65 65 70 31 35 00 FE FE FE FE FE FE FE FE sleep15.........}
+unfreed: <9> src/clerkNanny.c(97), 2056 bytes at 0x237f5c0  	{74 65 73 74 31 00 FE FE FE FE FE FE FE FE FE FE test1...........}
+unfreed: <8> src/clerkNanny.c(97), 2056 bytes at 0x237ed60  	{74 65 73 74 00 FE FE FE FE FE FE FE FE FE FE FE test............}
+unfreed: <7> src/clerkNanny.c(97), 2056 bytes at 0x237e500  	{61 2E 6F 75 74 00 FE FE FE FE FE FE FE FE FE FE a.out...........}
+unfreed: <6> src/clientNanny.c(44), 1024 bytes at 0x237de70  	{34 31 38 39 70 32 63 00 FE FE FE FE FE FE FE FE 4189p2c.........}
+unfreed: <5> src/clientNanny.c(38), 1024 bytes at 0x237da20  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <4> src/clientNanny.c(37), 1024 bytes at 0x237d5d0  	{70 67 72 65 70 20 2D 75 20 6C 61 75 74 69 73 63 pgrep -u lautisc}
+unfreed: <3> src/clientNanny.c(36), 1024 bytes at 0x237d180  	{34 31 38 35 0A 00 4F 57 53 20 4D 59 5F 50 49 44 4185..OWS MY_PID}
+unfreed: <2> src/clerkNanny.c(28), 1024 bytes at 0x237caf0  	{73 6C 65 65 70 31 35 00 31 30 00 FE FE FE FE FE sleep15.10......}
+unfreed: <1> src/procnanny.c(38), 30 bytes at 0x237c350  	{73 72 63 2F 74 6D 70 2F 61 32 2D 73 69 6D 70 6C src/tmp/a2-simpl}
+
+Memory usage statistics (global):
+ N)umber of allocations made: 11
+ L)argest memory usage      : 13390
+ T)otal of all alloc() calls: 13390
+ U)nfreed bytes totals      : 13390
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 19:13:33 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(228), NULL pointer free'd
+NULL free: <20> src/clientNanny.c(87), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(105), NULL pointer free'd
+
+Stopped at Wed Nov 11 19:13:55 2015
+
+unfreed: <21> src/clientNanny.c(89), 16 bytes at 0x1666480  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <19> src/clientNanny.c(71), 16 bytes at 0x1666420  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <11> src/clientNanny.c(189), 16 bytes at 0x16663c0  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <6> src/clientNanny.c(44), 1024 bytes at 0x1667e70  	{34 33 32 33 70 32 63 00 FE FE FE FE FE FE FE FE 4323p2c.........}
+
+Memory usage statistics (global):
+ N)umber of allocations made: 13
+ L)argest memory usage      : 13390
+ T)otal of all alloc() calls: 13422
+ U)nfreed bytes totals      : 1072
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 19:14:28 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(228), NULL pointer free'd
+NULL free: <14> src/clientNanny.c(228), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(87), NULL pointer free'd
+NULL free: <24> src/clientNanny.c(105), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 19:14:55 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(228), NULL pointer free'd
+NULL free: <14> src/clientNanny.c(228), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(87), NULL pointer free'd
+NULL free: <24> src/clientNanny.c(105), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 19:15:11 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(228), NULL pointer free'd
+NULL free: <14> src/clientNanny.c(228), NULL pointer free'd
+NULL free: <16> src/clientNanny.c(228), NULL pointer free'd
+NULL free: <24> src/clientNanny.c(87), NULL pointer free'd
+NULL free: <26> src/clientNanny.c(105), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 19:17:52 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(228), NULL pointer free'd
+NULL free: <14> src/clientNanny.c(228), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(87), NULL pointer free'd
+NULL free: <24> src/clientNanny.c(105), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 19:20:35 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(230), NULL pointer free'd
+NULL free: <14> src/clientNanny.c(230), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(87), NULL pointer free'd
+NULL free: <24> src/clientNanny.c(105), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 19:22:26 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(230), NULL pointer free'd
+NULL free: <14> src/clientNanny.c(230), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(87), NULL pointer free'd
+NULL free: <24> src/clientNanny.c(105), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 19:22:50 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(230), NULL pointer free'd
+
+Stopped at Wed Nov 11 19:22:50 2015
+
+unfreed: <11> src/clientNanny.c(191), 16 bytes at 0x1b823c0  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <6> src/clientNanny.c(44), 1024 bytes at 0x1b83e70  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <5> src/clientNanny.c(38), 1024 bytes at 0x1b83a20  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <4> src/clientNanny.c(37), 1024 bytes at 0x1b835d0  	{70 67 72 65 70 20 2D 75 20 6C 61 75 74 69 73 63 pgrep -u lautisc}
+unfreed: <3> src/clientNanny.c(36), 1024 bytes at 0x1b83180  	{49 6E 66 6F 3A 20 43 61 75 67 68 74 20 53 49 47 Info: Caught SIG}
+
+Memory usage statistics (global):
+ N)umber of allocations made: 11
+ L)argest memory usage      : 13390
+ T)otal of all alloc() calls: 13390
+ U)nfreed bytes totals      : 4112
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 19:22:58 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(230), NULL pointer free'd
+NULL free: <14> src/clientNanny.c(230), NULL pointer free'd
+
+Stopped at Wed Nov 11 19:23:04 2015
+
+unfreed: <13> src/clientNanny.c(191), 16 bytes at 0x1a53420  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <11> src/clientNanny.c(191), 16 bytes at 0x1a533c0  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <6> src/clientNanny.c(44), 1024 bytes at 0x1a54e70  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <5> src/clientNanny.c(38), 1024 bytes at 0x1a54a20  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <4> src/clientNanny.c(37), 1024 bytes at 0x1a545d0  	{70 67 72 65 70 20 2D 75 20 6C 61 75 74 69 73 63 pgrep -u lautisc}
+unfreed: <3> src/clientNanny.c(36), 1024 bytes at 0x1a54180  	{49 6E 66 6F 3A 20 43 61 75 67 68 74 20 53 49 47 Info: Caught SIG}
+
+Memory usage statistics (global):
+ N)umber of allocations made: 12
+ L)argest memory usage      : 13406
+ T)otal of all alloc() calls: 13406
+ U)nfreed bytes totals      : 4128
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 19:23:14 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(230), NULL pointer free'd
+NULL free: <14> src/clientNanny.c(230), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(87), NULL pointer free'd
+NULL free: <24> src/clientNanny.c(105), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 19:29:34 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(230), NULL pointer free'd
+NULL free: <14> src/clientNanny.c(230), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(87), NULL pointer free'd
+NULL free: <24> src/clientNanny.c(105), NULL pointer free'd
+
+Stopped at Wed Nov 11 19:29:40 2015
+
+unfreed: <23> src/clientNanny.c(89), 16 bytes at 0x112faf0  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <21> src/clientNanny.c(71), 16 bytes at 0x112f480  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <13> src/clientNanny.c(191), 16 bytes at 0x112f420  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <11> src/clientNanny.c(191), 16 bytes at 0x112f3c0  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <6> src/clientNanny.c(44), 1024 bytes at 0x1130e70  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <5> src/clientNanny.c(38), 1024 bytes at 0x1130a20  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <4> src/clientNanny.c(37), 1024 bytes at 0x11305d0  	{70 67 72 65 70 20 2D 75 20 6C 61 75 74 69 73 63 pgrep -u lautisc}
+unfreed: <3> src/clientNanny.c(36), 1024 bytes at 0x1130180  	{49 6E 66 6F 3A 20 43 61 75 67 68 74 20 53 49 47 Info: Caught SIG}
+
+Memory usage statistics (global):
+ N)umber of allocations made: 14
+ L)argest memory usage      : 13406
+ T)otal of all alloc() calls: 13438
+ U)nfreed bytes totals      : 4160
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 19:29:51 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(230), NULL pointer free'd
+NULL free: <14> src/clientNanny.c(230), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(87), NULL pointer free'd
+NULL free: <24> src/clientNanny.c(105), NULL pointer free'd
+
+Stopped at Wed Nov 11 19:29:57 2015
+
+unfreed: <23> src/clientNanny.c(89), 16 bytes at 0x1df2af0  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <21> src/clientNanny.c(71), 16 bytes at 0x1df2480  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <13> src/clientNanny.c(191), 16 bytes at 0x1df2420  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <11> src/clientNanny.c(191), 16 bytes at 0x1df23c0  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <6> src/clientNanny.c(44), 1024 bytes at 0x1df3e70  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <5> src/clientNanny.c(38), 1024 bytes at 0x1df3a20  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <4> src/clientNanny.c(37), 1024 bytes at 0x1df35d0  	{70 67 72 65 70 20 2D 75 20 6C 61 75 74 69 73 63 pgrep -u lautisc}
+unfreed: <3> src/clientNanny.c(36), 1024 bytes at 0x1df3180  	{49 6E 66 6F 3A 20 43 61 75 67 68 74 20 53 49 47 Info: Caught SIG}
+
+Memory usage statistics (global):
+ N)umber of allocations made: 14
+ L)argest memory usage      : 13406
+ T)otal of all alloc() calls: 13438
+ U)nfreed bytes totals      : 4160
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 19:30:49 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(230), NULL pointer free'd
+NULL free: <14> src/clientNanny.c(230), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(87), NULL pointer free'd
+NULL free: <24> src/clientNanny.c(105), NULL pointer free'd
+
+Stopped at Wed Nov 11 19:30:56 2015
+
+unfreed: <23> src/clientNanny.c(89), 16 bytes at 0x1bc3af0  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <21> src/clientNanny.c(71), 16 bytes at 0x1bc3480  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <13> src/clientNanny.c(191), 16 bytes at 0x1bc3420  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <11> src/clientNanny.c(191), 16 bytes at 0x1bc33c0  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <6> src/clientNanny.c(44), 1024 bytes at 0x1bc4e70  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <5> src/clientNanny.c(38), 1024 bytes at 0x1bc4a20  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <4> src/clientNanny.c(37), 1024 bytes at 0x1bc45d0  	{70 67 72 65 70 20 2D 75 20 6C 61 75 74 69 73 63 pgrep -u lautisc}
+unfreed: <3> src/clientNanny.c(36), 1024 bytes at 0x1bc4180  	{49 6E 66 6F 3A 20 43 61 75 67 68 74 20 53 49 47 Info: Caught SIG}
+
+Memory usage statistics (global):
+ N)umber of allocations made: 14
+ L)argest memory usage      : 13406
+ T)otal of all alloc() calls: 13438
+ U)nfreed bytes totals      : 4160
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 19:31:06 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(230), NULL pointer free'd
+NULL free: <14> src/clientNanny.c(230), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(87), NULL pointer free'd
+NULL free: <24> src/clientNanny.c(105), NULL pointer free'd
+
+Stopped at Wed Nov 11 19:31:12 2015
+
+unfreed: <23> src/clientNanny.c(89), 16 bytes at 0x9eeaf0  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <21> src/clientNanny.c(71), 16 bytes at 0x9ee480  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <13> src/clientNanny.c(191), 16 bytes at 0x9ee420  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <11> src/clientNanny.c(191), 16 bytes at 0x9ee3c0  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <6> src/clientNanny.c(44), 1024 bytes at 0x9efe70  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+
+Memory usage statistics (global):
+ N)umber of allocations made: 14
+ L)argest memory usage      : 13406
+ T)otal of all alloc() calls: 13438
+ U)nfreed bytes totals      : 1088
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 19:31:23 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(230), NULL pointer free'd
+NULL free: <14> src/clientNanny.c(230), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(87), NULL pointer free'd
+NULL free: <24> src/clientNanny.c(105), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 19:32:48 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(230), NULL pointer free'd
+NULL free: <14> src/clientNanny.c(230), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(87), NULL pointer free'd
+NULL free: <24> src/clientNanny.c(105), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 19:33:06 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(228), NULL pointer free'd
+NULL free: <14> src/clientNanny.c(228), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(87), NULL pointer free'd
+NULL free: <24> src/clientNanny.c(105), NULL pointer free'd
+
+Stopped at Wed Nov 11 19:33:12 2015
+
+unfreed: <23> src/clientNanny.c(89), 16 bytes at 0x153faf0  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <21> src/clientNanny.c(71), 16 bytes at 0x153f480  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <13> src/clientNanny.c(189), 16 bytes at 0x153f420  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <11> src/clientNanny.c(189), 16 bytes at 0x153f3c0  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <6> src/clientNanny.c(44), 1024 bytes at 0x1540e70  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+
+Memory usage statistics (global):
+ N)umber of allocations made: 14
+ L)argest memory usage      : 13406
+ T)otal of all alloc() calls: 13438
+ U)nfreed bytes totals      : 1088
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 19:33:20 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(230), NULL pointer free'd
+NULL free: <14> src/clientNanny.c(230), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(87), NULL pointer free'd
+NULL free: <24> src/clientNanny.c(105), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 19:37:51 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(230), NULL pointer free'd
+NULL free: <14> src/clientNanny.c(230), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(87), NULL pointer free'd
+NULL free: <24> src/clientNanny.c(105), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 19:38:25 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(230), NULL pointer free'd
+NULL free: <14> src/clientNanny.c(230), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(87), NULL pointer free'd
+NULL free: <24> src/clientNanny.c(105), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 19:38:37 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(230), NULL pointer free'd
+NULL free: <14> src/clientNanny.c(230), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(87), NULL pointer free'd
+NULL free: <24> src/clientNanny.c(105), NULL pointer free'd
+
+Stopped at Wed Nov 11 19:38:43 2015
+
+unfreed: <23> src/clientNanny.c(89), 16 bytes at 0x2353af0  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <21> src/clientNanny.c(71), 16 bytes at 0x2353480  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <13> src/clientNanny.c(191), 16 bytes at 0x2353420  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <11> src/clientNanny.c(191), 16 bytes at 0x23533c0  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <6> src/clientNanny.c(44), 1024 bytes at 0x2354e70  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+
+Memory usage statistics (global):
+ N)umber of allocations made: 14
+ L)argest memory usage      : 13406
+ T)otal of all alloc() calls: 13438
+ U)nfreed bytes totals      : 1088
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 19:38:57 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(231), NULL pointer free'd
+NULL free: <20> src/clientNanny.c(87), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(105), NULL pointer free'd
+
+Stopped at Wed Nov 11 19:38:58 2015
+
+unfreed: <21> src/clientNanny.c(89), 16 bytes at 0x1fe4480  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <19> src/clientNanny.c(71), 16 bytes at 0x1fe4420  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <11> src/clientNanny.c(192), 16 bytes at 0x1fe43c0  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <6> src/clientNanny.c(44), 1024 bytes at 0x1fe5e70  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+
+Memory usage statistics (global):
+ N)umber of allocations made: 13
+ L)argest memory usage      : 13390
+ T)otal of all alloc() calls: 13422
+ U)nfreed bytes totals      : 1072
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 19:39:01 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(231), NULL pointer free'd
+NULL free: <14> src/clientNanny.c(231), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(87), NULL pointer free'd
+NULL free: <24> src/clientNanny.c(105), NULL pointer free'd
+
+Stopped at Wed Nov 11 19:39:07 2015
+
+unfreed: <23> src/clientNanny.c(89), 16 bytes at 0xa9baf0  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <21> src/clientNanny.c(71), 16 bytes at 0xa9b480  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <13> src/clientNanny.c(192), 16 bytes at 0xa9b420  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <11> src/clientNanny.c(192), 16 bytes at 0xa9b3c0  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <6> src/clientNanny.c(44), 1024 bytes at 0xa9ce70  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+
+Memory usage statistics (global):
+ N)umber of allocations made: 14
+ L)argest memory usage      : 13406
+ T)otal of all alloc() calls: 13438
+ U)nfreed bytes totals      : 1088
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 19:39:10 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <12> src/clientNanny.c(231), NULL pointer free'd
+NULL free: <14> src/clientNanny.c(231), NULL pointer free'd
+NULL free: <16> src/clientNanny.c(231), NULL pointer free'd
+NULL free: <24> src/clientNanny.c(87), NULL pointer free'd
+NULL free: <26> src/clientNanny.c(105), NULL pointer free'd
+
+Stopped at Wed Nov 11 19:39:21 2015
+
+unfreed: <25> src/clientNanny.c(89), 16 bytes at 0x873b50  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <23> src/clientNanny.c(71), 16 bytes at 0x873af0  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <15> src/clientNanny.c(192), 16 bytes at 0x873480  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <13> src/clientNanny.c(192), 16 bytes at 0x873420  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <11> src/clientNanny.c(192), 16 bytes at 0x8733c0  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <6> src/clientNanny.c(44), 1024 bytes at 0x874e70  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+
+Memory usage statistics (global):
+ N)umber of allocations made: 15
+ L)argest memory usage      : 13422
+ T)otal of all alloc() calls: 13454
+ U)nfreed bytes totals      : 1104
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 19:44:25 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <20> src/clientNanny.c(87), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(105), NULL pointer free'd
+
+Stopped at Wed Nov 11 19:44:31 2015
+
+unfreed: <21> src/clientNanny.c(89), 16 bytes at 0x10b4af0  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <19> src/clientNanny.c(71), 16 bytes at 0x10b4480  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <12> src/clientNanny.c(192), 16 bytes at 0x10b4420  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <11> src/clientNanny.c(192), 16 bytes at 0x10b43c0  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <6> src/clientNanny.c(44), 1024 bytes at 0x10b5e70  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+
+Memory usage statistics (global):
+ N)umber of allocations made: 14
+ L)argest memory usage      : 13406
+ T)otal of all alloc() calls: 13438
+ U)nfreed bytes totals      : 1088
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 19:47:37 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <22> src/clientNanny.c(117), NULL pointer free'd
+NULL free: <23> src/clientNanny.c(118), NULL pointer free'd
+
+Stopped at Wed Nov 11 19:47:43 2015
+
+unfreed: <8> src/clientNanny.c(50), 1024 bytes at 0x7ece70  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <7> src/clientNanny.c(43), 16 bytes at 0x7eb420  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <6> src/clientNanny.c(42), 16 bytes at 0x7eb3c0  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+
+Memory usage statistics (global):
+ N)umber of allocations made: 12
+ L)argest memory usage      : 13406
+ T)otal of all alloc() calls: 13406
+ U)nfreed bytes totals      : 1056
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 19:48:04 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <22> src/clientNanny.c(117), NULL pointer free'd
+NULL free: <23> src/clientNanny.c(118), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 19:48:10 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <22> src/clientNanny.c(117), NULL pointer free'd
+NULL free: <23> src/clientNanny.c(118), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 19:48:33 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <22> src/clientNanny.c(117), NULL pointer free'd
+NULL free: <23> src/clientNanny.c(118), NULL pointer free'd
+
+Stopped at Wed Nov 11 19:48:33 2015
+
+unfreed: <8> src/clientNanny.c(50), 1024 bytes at 0x14a4e70  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <7> src/clientNanny.c(43), 16 bytes at 0x14a3420  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <6> src/clientNanny.c(42), 16 bytes at 0x14a33c0  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+
+Memory usage statistics (global):
+ N)umber of allocations made: 12
+ L)argest memory usage      : 13406
+ T)otal of all alloc() calls: 13406
+ U)nfreed bytes totals      : 1056
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 19:48:38 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <22> src/clientNanny.c(117), NULL pointer free'd
+NULL free: <23> src/clientNanny.c(118), NULL pointer free'd
+
+Stopped at Wed Nov 11 19:48:43 2015
+
+unfreed: <8> src/clientNanny.c(50), 1024 bytes at 0x124fe70  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <7> src/clientNanny.c(43), 16 bytes at 0x124e420  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <6> src/clientNanny.c(42), 16 bytes at 0x124e3c0  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+
+Memory usage statistics (global):
+ N)umber of allocations made: 12
+ L)argest memory usage      : 13406
+ T)otal of all alloc() calls: 13406
+ U)nfreed bytes totals      : 1056
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 19:50:15 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+
+Stopped at Wed Nov 11 19:50:16 2015
+
+unfreed: <8> src/clientNanny.c(50), 1024 bytes at 0x770e70  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <7> src/clientNanny.c(43), 16 bytes at 0x76f420  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <6> src/clientNanny.c(42), 16 bytes at 0x76f3c0  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+
+Memory usage statistics (global):
+ N)umber of allocations made: 12
+ L)argest memory usage      : 13406
+ T)otal of all alloc() calls: 13406
+ U)nfreed bytes totals      : 1056
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 19:50:20 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+
+Stopped at Wed Nov 11 19:50:26 2015
+
+unfreed: <8> src/clientNanny.c(50), 1024 bytes at 0x1684e70  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <7> src/clientNanny.c(43), 16 bytes at 0x1683420  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <6> src/clientNanny.c(42), 16 bytes at 0x16833c0  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+
+Memory usage statistics (global):
+ N)umber of allocations made: 12
+ L)argest memory usage      : 13406
+ T)otal of all alloc() calls: 13406
+ U)nfreed bytes totals      : 1056
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 19:51:28 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 19:51:34 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 19:53:41 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 19:54:02 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+
+Stopped at Wed Nov 11 19:54:03 2015
+
+unfreed: <7> src/clientNanny.c(43), 16 bytes at 0x19f4420  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <6> src/clientNanny.c(42), 16 bytes at 0x19f43c0  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+
+Memory usage statistics (global):
+ N)umber of allocations made: 12
+ L)argest memory usage      : 13406
+ T)otal of all alloc() calls: 13406
+ U)nfreed bytes totals      : 32
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 19:54:07 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+
+Stopped at Wed Nov 11 19:54:12 2015
+
+unfreed: <7> src/clientNanny.c(43), 16 bytes at 0x13ab420  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <6> src/clientNanny.c(42), 16 bytes at 0x13ab3c0  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+
+Memory usage statistics (global):
+ N)umber of allocations made: 12
+ L)argest memory usage      : 13406
+ T)otal of all alloc() calls: 13406
+ U)nfreed bytes totals      : 32
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 19:55:18 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <23> src/clientNanny.c(119), NULL pointer free'd
+NULL free: <24> src/clientNanny.c(120), NULL pointer free'd
+
+Stopped at Wed Nov 11 19:55:24 2015
+
+unfreed: <7> src/clientNanny.c(43), 16 bytes at 0xffd420  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <6> src/clientNanny.c(42), 16 bytes at 0xffd3c0  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+
+Memory usage statistics (global):
+ N)umber of allocations made: 12
+ L)argest memory usage      : 13406
+ T)otal of all alloc() calls: 13406
+ U)nfreed bytes totals      : 32
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 19:58:49 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+
+Stopped at Wed Nov 11 19:58:49 2015
+
+unfreed: <7> src/clientNanny.c(43), 16 bytes at 0xa73420  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <6> src/clientNanny.c(42), 16 bytes at 0xa733c0  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+
+Memory usage statistics (global):
+ N)umber of allocations made: 12
+ L)argest memory usage      : 13406
+ T)otal of all alloc() calls: 13406
+ U)nfreed bytes totals      : 32
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 19:59:18 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <23> src/clientNanny.c(120), NULL pointer free'd
+NULL free: <24> src/clientNanny.c(121), NULL pointer free'd
+
+Stopped at Wed Nov 11 19:59:20 2015
+
+unfreed: <7> src/clientNanny.c(43), 16 bytes at 0x2384420  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <6> src/clientNanny.c(42), 16 bytes at 0x23843c0  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+
+Memory usage statistics (global):
+ N)umber of allocations made: 12
+ L)argest memory usage      : 13406
+ T)otal of all alloc() calls: 13406
+ U)nfreed bytes totals      : 32
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 20:02:16 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+
+Stopped at Wed Nov 11 20:02:17 2015
+
+unfreed: <7> src/clientNanny.c(43), 16 bytes at 0x2568420  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <6> src/clientNanny.c(42), 16 bytes at 0x25683c0  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+
+Memory usage statistics (global):
+ N)umber of allocations made: 12
+ L)argest memory usage      : 13406
+ T)otal of all alloc() calls: 13406
+ U)nfreed bytes totals      : 32
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 20:03:15 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+
+Stopped at Wed Nov 11 20:03:16 2015
+
+unfreed: <7> src/clientNanny.c(43), 16 bytes at 0x2160420  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <6> src/clientNanny.c(42), 16 bytes at 0x21603c0  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+
+Memory usage statistics (global):
+ N)umber of allocations made: 12
+ L)argest memory usage      : 13406
+ T)otal of all alloc() calls: 13406
+ U)nfreed bytes totals      : 32
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 20:03:51 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+
+Stopped at Wed Nov 11 20:03:52 2015
+
+unfreed: <7> src/clientNanny.c(43), 16 bytes at 0xabf420  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <6> src/clientNanny.c(42), 16 bytes at 0xabf3c0  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+
+Memory usage statistics (global):
+ N)umber of allocations made: 12
+ L)argest memory usage      : 13406
+ T)otal of all alloc() calls: 13406
+ U)nfreed bytes totals      : 32
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 20:04:22 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+WILD free: <23> src/clientNanny.c(120), unknown pointer 0x60d1e0
+WILD free: <24> src/clientNanny.c(121), unknown pointer 0x60d3e0
+
+Stopped at Wed Nov 11 20:04:23 2015
+
+unfreed: <7> src/clientNanny.c(43), 16 bytes at 0x120f420  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+unfreed: <6> src/clientNanny.c(42), 16 bytes at 0x120f3c0  	{FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE FE ................}
+
+Memory usage statistics (global):
+ N)umber of allocations made: 12
+ L)argest memory usage      : 13406
+ T)otal of all alloc() calls: 13406
+ U)nfreed bytes totals      : 32
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 20:06:52 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <21> src/clientNanny.c(120), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(121), NULL pointer free'd
+
+Stopped at Wed Nov 11 20:06:54 2015
+
+
+Memory usage statistics (global):
+ N)umber of allocations made: 10
+ L)argest memory usage      : 13374
+ T)otal of all alloc() calls: 13374
+ U)nfreed bytes totals      : 0
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 20:06:59 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <21> src/clientNanny.c(120), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(121), NULL pointer free'd
+
+Stopped at Wed Nov 11 20:07:04 2015
+
+
+Memory usage statistics (global):
+ N)umber of allocations made: 10
+ L)argest memory usage      : 13374
+ T)otal of all alloc() calls: 13374
+ U)nfreed bytes totals      : 0
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 20:07:26 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <21> src/clientNanny.c(120), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(121), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 20:07:40 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <21> src/clientNanny.c(120), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(121), NULL pointer free'd
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 20:07:49 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <21> src/clientNanny.c(120), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(121), NULL pointer free'd
+
+Stopped at Wed Nov 11 20:07:51 2015
+
+
+Memory usage statistics (global):
+ N)umber of allocations made: 10
+ L)argest memory usage      : 13374
+ T)otal of all alloc() calls: 13374
+ U)nfreed bytes totals      : 0
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 20:07:53 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <21> src/clientNanny.c(120), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(121), NULL pointer free'd
+
+Stopped at Wed Nov 11 20:07:58 2015
+
+
+Memory usage statistics (global):
+ N)umber of allocations made: 10
+ L)argest memory usage      : 13374
+ T)otal of all alloc() calls: 13374
+ U)nfreed bytes totals      : 0
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 20:08:02 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <21> src/clientNanny.c(120), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(121), NULL pointer free'd
+
+Stopped at Wed Nov 11 20:08:24 2015
+
+
+Memory usage statistics (global):
+ N)umber of allocations made: 10
+ L)argest memory usage      : 13374
+ T)otal of all alloc() calls: 13374
+ U)nfreed bytes totals      : 0
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 20:08:02 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <21> src/clientNanny.c(120), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(121), NULL pointer free'd
+
+Stopped at Wed Nov 11 20:08:24 2015
+
+
+Memory usage statistics (global):
+ N)umber of allocations made: 10
+ L)argest memory usage      : 13374
+ T)otal of all alloc() calls: 13374
+ U)nfreed bytes totals      : 0
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 20:09:10 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <21> src/clientNanny.c(120), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(121), NULL pointer free'd
+
+Stopped at Wed Nov 11 20:09:58 2015
+
+
+Memory usage statistics (global):
+ N)umber of allocations made: 10
+ L)argest memory usage      : 13374
+ T)otal of all alloc() calls: 13374
+ U)nfreed bytes totals      : 0
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 20:09:10 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <21> src/clientNanny.c(120), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(121), NULL pointer free'd
+
+Stopped at Wed Nov 11 20:09:58 2015
+
+
+Memory usage statistics (global):
+ N)umber of allocations made: 10
+ L)argest memory usage      : 13374
+ T)otal of all alloc() calls: 13374
+ U)nfreed bytes totals      : 0
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 20:09:10 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <21> src/clientNanny.c(120), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(121), NULL pointer free'd
+
+Stopped at Wed Nov 11 20:09:58 2015
+
+
+Memory usage statistics (global):
+ N)umber of allocations made: 10
+ L)argest memory usage      : 13374
+ T)otal of all alloc() calls: 13374
+ U)nfreed bytes totals      : 0
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 20:22:17 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <21> src/clientNanny.c(121), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(122), NULL pointer free'd
+
+Stopped at Wed Nov 11 20:22:21 2015
+
+
+Memory usage statistics (global):
+ N)umber of allocations made: 10
+ L)argest memory usage      : 13374
+ T)otal of all alloc() calls: 13374
+ U)nfreed bytes totals      : 0
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 20:22:24 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <21> src/clientNanny.c(121), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(122), NULL pointer free'd
+
+Stopped at Wed Nov 11 20:22:25 2015
+
+
+Memory usage statistics (global):
+ N)umber of allocations made: 10
+ L)argest memory usage      : 13374
+ T)otal of all alloc() calls: 13374
+ U)nfreed bytes totals      : 0
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 20:23:46 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <21> src/clientNanny.c(121), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(122), NULL pointer free'd
+
+Stopped at Wed Nov 11 20:23:52 2015
+
+
+Memory usage statistics (global):
+ N)umber of allocations made: 10
+ L)argest memory usage      : 13374
+ T)otal of all alloc() calls: 13374
+ U)nfreed bytes totals      : 0
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 20:27:12 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <21> src/clientNanny.c(121), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(122), NULL pointer free'd
+
+Stopped at Wed Nov 11 20:27:25 2015
+
+
+Memory usage statistics (global):
+ N)umber of allocations made: 10
+ L)argest memory usage      : 13374
+ T)otal of all alloc() calls: 13374
+ U)nfreed bytes totals      : 0
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 20:28:32 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <21> src/clientNanny.c(121), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(122), NULL pointer free'd
+
+Stopped at Wed Nov 11 20:28:46 2015
+
+
+Memory usage statistics (global):
+ N)umber of allocations made: 10
+ L)argest memory usage      : 13374
+ T)otal of all alloc() calls: 13374
+ U)nfreed bytes totals      : 0
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 20:29:48 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <21> src/clientNanny.c(121), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(122), NULL pointer free'd
+
+Stopped at Wed Nov 11 20:29:50 2015
+
+
+Memory usage statistics (global):
+ N)umber of allocations made: 10
+ L)argest memory usage      : 13374
+ T)otal of all alloc() calls: 13374
+ U)nfreed bytes totals      : 0
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 20:29:59 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <21> src/clientNanny.c(121), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(122), NULL pointer free'd
+
+Stopped at Wed Nov 11 20:30:01 2015
+
+
+Memory usage statistics (global):
+ N)umber of allocations made: 10
+ L)argest memory usage      : 13374
+ T)otal of all alloc() calls: 13374
+ U)nfreed bytes totals      : 0
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 20:49:36 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <21> src/clientNanny.c(122), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(123), NULL pointer free'd
+
+Stopped at Wed Nov 11 20:50:26 2015
+
+
+Memory usage statistics (global):
+ N)umber of allocations made: 10
+ L)argest memory usage      : 13374
+ T)otal of all alloc() calls: 13374
+ U)nfreed bytes totals      : 0
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 20:49:36 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <21> src/clientNanny.c(122), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(123), NULL pointer free'd
+
+Stopped at Wed Nov 11 20:50:26 2015
+
+
+Memory usage statistics (global):
+ N)umber of allocations made: 10
+ L)argest memory usage      : 13374
+ T)otal of all alloc() calls: 13374
+ U)nfreed bytes totals      : 0
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 20:49:36 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <21> src/clientNanny.c(122), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(123), NULL pointer free'd
+
+Stopped at Wed Nov 11 20:50:26 2015
+
+
+Memory usage statistics (global):
+ N)umber of allocations made: 10
+ L)argest memory usage      : 13374
+ T)otal of all alloc() calls: 13374
+ U)nfreed bytes totals      : 0
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 20:50:57 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <21> src/clientNanny.c(122), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(123), NULL pointer free'd
+
+Stopped at Wed Nov 11 20:50:57 2015
+
+
+Memory usage statistics (global):
+ N)umber of allocations made: 10
+ L)argest memory usage      : 13374
+ T)otal of all alloc() calls: 13374
+ U)nfreed bytes totals      : 0
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 20:52:47 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <21> src/clientNanny.c(122), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(123), NULL pointer free'd
+
+Stopped at Wed Nov 11 20:53:34 2015
+
+
+Memory usage statistics (global):
+ N)umber of allocations made: 10
+ L)argest memory usage      : 13374
+ T)otal of all alloc() calls: 13374
+ U)nfreed bytes totals      : 0
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 20:52:47 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <21> src/clientNanny.c(122), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(123), NULL pointer free'd
+
+Stopped at Wed Nov 11 20:53:34 2015
+
+
+Memory usage statistics (global):
+ N)umber of allocations made: 10
+ L)argest memory usage      : 13374
+ T)otal of all alloc() calls: 13374
+ U)nfreed bytes totals      : 0
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 20:54:39 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <21> src/clientNanny.c(122), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(123), NULL pointer free'd
+
+Stopped at Wed Nov 11 20:59:04 2015
+
+
+Memory usage statistics (global):
+ N)umber of allocations made: 10
+ L)argest memory usage      : 13374
+ T)otal of all alloc() calls: 13374
+ U)nfreed bytes totals      : 0
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 20:54:39 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <21> src/clientNanny.c(122), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(123), NULL pointer free'd
+
+Stopped at Wed Nov 11 20:59:04 2015
+
+
+Memory usage statistics (global):
+ N)umber of allocations made: 10
+ L)argest memory usage      : 13374
+ T)otal of all alloc() calls: 13374
+ U)nfreed bytes totals      : 0
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 20:59:09 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <21> src/clientNanny.c(124), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(125), NULL pointer free'd
+
+Stopped at Wed Nov 11 20:59:20 2015
+
+
+Memory usage statistics (global):
+ N)umber of allocations made: 10
+ L)argest memory usage      : 13374
+ T)otal of all alloc() calls: 13374
+ U)nfreed bytes totals      : 0
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 20:59:33 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <21> src/clientNanny.c(124), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(125), NULL pointer free'd
+
+Stopped at Wed Nov 11 20:59:54 2015
+
+
+Memory usage statistics (global):
+ N)umber of allocations made: 10
+ L)argest memory usage      : 13374
+ T)otal of all alloc() calls: 13374
+ U)nfreed bytes totals      : 0
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 20:59:33 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <21> src/clientNanny.c(124), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(125), NULL pointer free'd
+
+Stopped at Wed Nov 11 20:59:54 2015
+
+
+Memory usage statistics (global):
+ N)umber of allocations made: 10
+ L)argest memory usage      : 13374
+ T)otal of all alloc() calls: 13374
+ U)nfreed bytes totals      : 0
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 20:59:59 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <21> src/clientNanny.c(124), NULL pointer free'd
+NULL free: <22> src/clientNanny.c(125), NULL pointer free'd
+
+Stopped at Wed Nov 11 21:01:50 2015
+
+
+Memory usage statistics (global):
+ N)umber of allocations made: 10
+ L)argest memory usage      : 13374
+ T)otal of all alloc() calls: 13374
+ U)nfreed bytes totals      : 0
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 20:59:59 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <29> src/clientNanny.c(124), NULL pointer free'd
+NULL free: <30> src/clientNanny.c(125), NULL pointer free'd
+
+Stopped at Wed Nov 11 21:01:50 2015
+
+
+Memory usage statistics (global):
+ N)umber of allocations made: 14
+ L)argest memory usage      : 13374
+ T)otal of all alloc() calls: 21598
+ U)nfreed bytes totals      : 0
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 21:02:17 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <31> src/clientNanny.c(124), NULL pointer free'd
+NULL free: <32> src/clientNanny.c(125), NULL pointer free'd
+
+Stopped at Wed Nov 11 21:02:51 2015
+
+
+Memory usage statistics (global):
+ N)umber of allocations made: 15
+ L)argest memory usage      : 15430
+ T)otal of all alloc() calls: 23654
+ U)nfreed bytes totals      : 0
+
+============= MEMWATCH 2.71 Copyright (C) 1992-1999 Johan Lindh =============
+
+Started at Wed Nov 11 21:05:53 2015
+
+Modes: __STDC__ 64-bit mwDWORD==(unsigned int)
+mwROUNDALLOC==8 sizeof(mwData)==56 mwDataSize==56
+
+NULL free: <23> src/clientNanny.c(126), NULL pointer free'd
+NULL free: <24> src/clientNanny.c(127), NULL pointer free'd
+
+Stopped at Wed Nov 11 21:05:57 2015
+
+
+Memory usage statistics (global):
+ N)umber of allocations made: 11
+ L)argest memory usage      : 15430
+ T)otal of all alloc() calls: 15430
+ U)nfreed bytes totals      : 0

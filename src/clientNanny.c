@@ -9,10 +9,13 @@ char *childPID;
 char username[256];
 int killedProcesses = 0;
 char pidVal[150];
+pid_t parent_pid;
 
 char line[MAXLINE];
 int fd = 0;
 char *myfifo;
+
+int sighupFlag;
 
 FILE* fpin;
 
@@ -30,16 +33,23 @@ item * curr;
 BoredChild *boredChild_head;
 MonChild *monChild_head;
 
+MonChild *iterCurr;
+BoredChild *iterCurrr; 
 
 void clientNannyFlow(void){
 	msgData = (char*)malloc(1024 * sizeof(char));
 	psLine = (char*)malloc(1024 * sizeof(char));
 	childPID = (char*)malloc(1024 * sizeof(char));
+
+	iterCurr = NULL;
+	iterCurrr = NULL;
+
 	boredChild_head = NULL;
 	monChild_head = NULL;
 
-	myfifo = (char*)malloc(1024 * sizeof(char));
+	parent_pid = getpid();
 
+	myfifo = (char*)malloc(1024 * sizeof(char));
 
 	extern FILE *popen();
 
@@ -49,7 +59,8 @@ void clientNannyFlow(void){
 	//GET CURRENT USER NAME
 	sprintf(psLine, "id -u -n");
 	if(!(fpin = popen(psLine, "r"))){
-		printf("Error: Failed on popen of %s", psLine);
+		sprintf(msgData, "Error: Failed on popen of %s", psLine);
+		clientNannySendDataToClerk(msgData, BOTH);
 	} else{
 		while(fgets(psLine, 1024, fpin)){
 			strtok(psLine, "\n");
@@ -58,19 +69,66 @@ void clientNannyFlow(void){
 		}
 		fclose(fpin);	
 	}
+	sprintf(msgData, "Info: Parent process is PID %d", getpid());
+	clientNannySendDataToClerk(msgData, LOGFILE);
+
+	killOldProcnannys();
 
 	clerkNannyParseConfigFile(SIGHUP);//Should trigger its inital Check of processes
 }
 
 void clientNannyLoop(void){}
 
+void unlinkFIFOandKillChildren(void){
+	iterCurr = monChild_head;
+	while(iterCurr != NULL){
+		sprintf(myfifo, "%dp2c", iterCurr->childPID);
+        if (unlink(myfifo) < 0) {
+        	sprintf(msgData, "ERROR: Cannot unlink p2c, child: %d", iterCurr->childPID);
+            clientNannySendDataToClerk(msgData, DEBUG);
+        }
+        sprintf(myfifo, "%dc2p", iterCurr->childPID);
+        if (unlink(myfifo) < 0) {
+        	sprintf(msgData, "ERROR: Cannot unlink cp2, child: %d", iterCurr->childPID);
+            clientNannySendDataToClerk(msgData, DEBUG);
+        }
+        // kill(SIGKILL, iterCurr->childPID);
+		iterCurr = iterCurr->next;
+	}
+
+	iterCurrr = boredChild_head;
+	while(iterCurrr != NULL){
+		sprintf(myfifo, "%dp2c", iterCurrr->pid);
+        if (unlink(myfifo) < 0) {
+        	sprintf(msgData, "ERROR: Cannot unlink p2c, child: %d", iterCurrr->pid);
+            clientNannySendDataToClerk(msgData, DEBUG);
+        }
+        sprintf(myfifo, "%dc2p", iterCurrr->pid);
+        if (unlink(myfifo) < 0) {
+        	sprintf(msgData, "ERROR: Cannot unlink cp2, child: %d", iterCurrr->pid);
+            clientNannySendDataToClerk(msgData, DEBUG);
+        }
+        // kill(SIGKILL, (pid_t) iterCurrr->pid);
+		iterCurrr = iterCurrr->next;
+	}
+}
+
 void clientNannyTeardown(void){
+	unlinkFIFOandKillChildren();
 	monLL_clear(&monChild_head);
-	stack_clear(&boredChild_head);//CLEAN BORED CHILDREN
+	stack_clear(&boredChild_head);
 	free(childPID);
 	free(msgData);
 	free(psLine);
-	fclose(fpin);
+	free(myfifo);
+
+
+	free(iterCurr);
+	free(iterCurrr);
+	
+	// if(fpin != NULL){
+	// 	fclose(fpin);
+	// }
 }
 
 static void clientNannySendDataToClerk(char* s, int lt){
@@ -111,7 +169,7 @@ void clientNannyCheckForProcesses(int signum){
 						// clientNannySendDataToClerk("DEBUG: PID not in table.", DEBUG);
 						// sprintf(msgData, "%d", stack_len(boredChild_head));
 						sprintf(msgData, "Info: Initializing monitoring of process '%s' (PID %s).", curr->name, pidVal);
-						clientNannySendDataToClerk(msgData, DEBUG);		
+						clientNannySendDataToClerk(msgData, BOTH);		
 						if(stack_len(boredChild_head) == 0 ){
 							//THEN FORK A NEW CHILD
 							clientNannySendDataToClerk("FORKING A NEW CHILD", DEBUG);
@@ -120,113 +178,99 @@ void clientNannyCheckForProcesses(int signum){
 							clientNannySendDataToClerk("USING AN EXISTING CHILD", DEBUG);
 							//USE EXISTING CHILD 
 							int child_pid = stack_pop(&boredChild_head);
-							
-							// char line[MAXLINE];
-							// int fd;
-						 //    char * myfifo;
 
-							sprintf(myfifo, "%d", child_pid);
+							sprintf(myfifo, "%dp2c", child_pid);
 							mkfifo(myfifo, 0666);
 
 							fd = open(myfifo, O_WRONLY);
 							sprintf(msgData, "%s %s %s %d\n", curr->name, curr->secs, pidVal, child_pid);
 							write(fd, msgData, (strlen(msgData)+1));
 							close(fd);
+
+							monLL_push(&monChild_head, (pid_t) atoi(pidVal), (pid_t) child_pid, curr->name, curr->secs);
 							// TELL CHILDPID TO MON pidVal
 						}
 					} //ALREADY BEING MONITORED. DO NOTHING.
 				}
 			}
-			if (!whileFixFlag){
+			if (!whileFixFlag && sighupFlag){
 				//clientNannySendDataToClerk(psLine, DEBUG);
 				sprintf(msgData, "Info: No '%s' processes found.", curr->name);
-				clientNannySendDataToClerk(msgData, DEBUG);		
+				clientNannySendDataToClerk(msgData, BOTH);
+
 			} 
 			fclose(fpin);	
-			curr = curr->next;
+			curr = curr->next; // Might need to go into next brace
 		}
+		
 	}
-	MonChild * iterCurr = malloc(sizeof(MonChild));
-	MonChild * tmp = malloc(sizeof(MonChild));
+	sighupFlag = 0;	
 	iterCurr = monChild_head;
-	while(iterCurr){
-		tmp = iterCurr;
-		iterCurr = iterCurr->next;
-		sprintf(msgData, "ITERATING %d",tmp->childPID);
+	while(iterCurr != NULL){
+		sprintf(msgData, "ITERATING CHILD %d MONS %d",iterCurr->childPID, iterCurr->monPID);
 		clientNannySendDataToClerk(msgData, DEBUG);
 
-		// if (tmp->monPID > 0){
-		// 	sprintf(psLine, "ps -u %s | grep %d", username, tmp->monPID); //REMEMBER TO REPLACE TO USERNAME
+		sprintf(myfifo, "%dc2p", iterCurr->childPID);
 
-		// 	if(!(fpin = popen(psLine, "r"))){
-		// 		sprintf(msgData,"Error: Failed on popen of %s", psLine);
-		// 		clientNannySendDataToClerk(msgData, DEBUG);
-		// 	} else {
-		// 		if(fgets(msgData, sizeof(msgData), fpin)){
-		// 			clientNannySendDataToClerk("ITS STILL RUNNING", DEBUG);
-		// 		} else {
-		// 			clientNannySendDataToClerk("ITS NOT RUNNING", DEBUG);
-		// 			stack_push(&boredChild_head, tmp->childPID);
-		// 			monChild_head =  monLL_remove(monChild_head, tmp->childPID);
-		// 			killedProcesses++;
-		// 		}
-		// 	}
-		// }
+		fd = open(myfifo, O_RDONLY|O_NONBLOCK);
+		if(fd){
+			// if(read(fd, line, MAXLINE) == -1) {clientNannySendDataToClerk("ERROR: Reading c2p iter check", DEBUG);}
+			read(fd, line, MAXLINE);
+			strtok(line, "\n");
+			sprintf(msgData, "PARENT READS DATA: %s", line);
+			clientNannySendDataToClerk(msgData, DEBUG);
 
-		// pipe(&tmp->c2p_pipe);
+			// if(close(fd)){clientNannySendDataToClerk("ERROR: Closing c2p during iter check", DEBUG);}
+			if(monLL_elem(&monChild_head, (pid_t) atoi(line))) {
+				if (atoi(line) <=0 ){
+					// Did not kill but is gone.
+				} else {
+					// did kill
+					killedProcesses++;
+					sprintf(msgData, "Action: PID %d (%s) killed after exceeding %s seconds.", iterCurr->monPID, iterCurr->name, iterCurr->secs);
+					clientNannySendDataToClerk(msgData, BOTH);
+					// [Mon Oct 26 11:29:17 MST 2015] Action: PID 332 (a.out) killed after exceeding 120 seconds.
+				}
+				sprintf(line, "%s", "");
+				stack_push(&boredChild_head, iterCurr->childPID);
 
-		sprintf(myfifo, "%d", tmp->childPID);
-
-		/* open, read, and display the message from the FIFO */
-		fd = open(myfifo, O_RDONLY);
-		read(fd, line, MAXLINE);
-		strtok(line, "\n");
-		sprintf(msgData, "PARENT READS DATA: %s", line);
-		clientNannySendDataToClerk(msgData, DEBUG);
-		if (atoi(line) <=0 ){
-			// Did not kill but is gone.
-		} else {
-			// did kill
-			killedProcesses++;
+				clientNannySendDataToClerk("REMOVING NODE FROM MON_LL DATA", DEBUG);
+				iterCurr = monLL_remove(monChild_head, iterCurr->monPID);
+				monChild_head = iterCurr;
+	
+				if(close(fd)){clientNannySendDataToClerk("ERROR: Closing fd after node removal", DEBUG);}//NEED TO FLUSH MAYBE ?
+			continue;
+			}
+		} else {clientNannySendDataToClerk("ERROR: opening c2p during iter check", DEBUG);}
+		if (iterCurr != NULL){
+			iterCurr = iterCurr->next;
 		}
-		stack_push(&boredChild_head, tmp->childPID);
-		monChild_head = monLL_remove(monChild_head, tmp->childPID);
-		close(fd);
 	}
-	free(tmp);
-	free(iterCurr);
-
 }
 
 void clientNannyForkProcMon(void){
 	pid_t child_pid;
-	// char line[MAXLINE];
-	// int fd;
- //    char * myfifo;
 
 	child_pid = fork();
 	if (child_pid >= 0){ /* fork success */
 		if (child_pid == 0) { /* Child */
-			//pid_t proc_pid = (pid_t) strtol(pidVal, NULL, 10);
 			pid_t proc_pid;
 			char* pid_name;
 			char* pid_secs;
 			char* myPid;
-			sprintf(msgData, "I AM NEW CHILD %d", child_pid);
+			sprintf(msgData, "I AM NEW CHILD %d", getpid());
 			clientNannySendDataToClerk(msgData, DEBUG);
 
-			// close(myPipes[1]);
 			while(1){
-				clientNannySendDataToClerk("GOT HERE", DEBUG);
-				sprintf(myfifo, "%d", getpid());
-				clientNannySendDataToClerk("GOT HERE2", DEBUG);
-    			/* open, read, and display the message from the FIFO */
-    			fd = open(myfifo, O_RDONLY);
-    			read(fd, line, MAXLINE);
-    			strtok(line, "\n");
-    			sprintf(msgData, "CHILD READS DATA: %s", line);
-				clientNannySendDataToClerk(msgData, DEBUG);	
-    			close(fd);
+				sprintf(myfifo, "%dp2c", getpid());
+    			fd = open(myfifo, O_RDONLY); //SHOULD BLOCK UNTIL OPEN FOR WRITTING
+    			if(fd > 0){
+	    			if(read(fd, line, MAXLINE) == -1) {clientNannySendDataToClerk("ERROR: Child Reading p2c", DEBUG);}
+	    			strtok(line, "\n");
+	    			sprintf(msgData, "CHILD READS DATA: %s", line);
+					clientNannySendDataToClerk(msgData, DEBUG);	
+	    			if(close(fd)){clientNannySendDataToClerk("ERROR: Child error Closing fifo p2c", DEBUG);}
+	    		} else {clientNannySendDataToClerk("ERROR: Opening from p2c fifo", DEBUG);}
 
 				char seps[] = " ";
 				char *token = strtok( line, seps );
@@ -247,50 +291,104 @@ void clientNannyForkProcMon(void){
 			    	myPid = token;
 			    }
 
-				sprintf(msgData, "NOW KNOWS: %s %s %d %s", pid_name, pid_secs, proc_pid, myPid);
+				sprintf(msgData, "NOW KNOWS PID_NAME: %s", pid_name);
 				clientNannySendDataToClerk(msgData, DEBUG);	
+
+				sprintf(msgData, "NOW KNOWS PID_Sec: %s", pid_secs);
+				clientNannySendDataToClerk(msgData, DEBUG);	
+
+				sprintf(msgData, "NOW KNOWS PID_PROC: %d", proc_pid);
+				clientNannySendDataToClerk(msgData, DEBUG);	
+
+				sprintf(msgData, "NOW KNOWS MY_PID: %s", myPid);
+				clientNannySendDataToClerk(msgData, DEBUG);	
+
 
 				if(proc_pid == -1){
 					exit(0);
 				}
 
 				sleep(atoi(pid_secs));
+
+
 				int killStatus = kill(proc_pid, SIGKILL);
 
 				if (killStatus == 0) {
 					clientNannySendDataToClerk("KILLED PROCESS", DEBUG);
-					sprintf(msgData, "%s\n", pidVal);
+					sprintf(msgData, "%d\n", proc_pid);
 				} else {
 					clientNannySendDataToClerk("ERROR KILLING PROCESS", DEBUG);
 					sprintf(msgData, "%s\n", "-1");
 				}
-				sprintf(myfifo, "%s", myPid);
-				mkfifo(myfifo, 0666);
-				fd = open(myfifo, O_WRONLY);
-				write(fd, msgData, (strlen(msgData)+1));
-				close(fd);
+				sprintf(myfifo, "%sc2p", myPid);
+				fd = open(myfifo, O_WRONLY|O_NONBLOCK);
+				if(fd){
+					if(write(fd, msgData, (strlen(msgData)+1)) == -1) {clientNannySendDataToClerk("ERROR: Writing c2p", DEBUG);}
+					clientNannySendDataToClerk("CHILD RETURNED KILL DATA", DEBUG);
+					clientNannySendDataToClerk(msgData, DEBUG);
+					// if(close(fd)){clientNannySendDataToClerk("ERROR: closing c2p fifo", DEBUG);}
+				} else {
+					clientNannySendDataToClerk("ERROR: Child Error Opening fifo c2p", DEBUG);
+				}						
 			}
 
-			clerkNannyTeardown();
-			clientNannyTeardown();
-			exit(1);
+			// clerkNannyTeardown();
+			// clientNannyTeardown();
+			// exit(1);
 
 		} else { /* Parent */
-			sprintf(myfifo, "%d", child_pid);
-			mkfifo(myfifo, 0666);
+			sprintf(myfifo, "%dp2c", child_pid);
+			if (mkfifo(myfifo, 0666)){
+				clientNannySendDataToClerk("Error making p2c fifo", DEBUG);
+			}
 
+			sprintf(myfifo, "%dc2p", child_pid);
+			if (mkfifo(myfifo, 0666)){
+				clientNannySendDataToClerk("Error making c2p fifo", DEBUG);
+			}
+
+			sprintf(myfifo, "%dp2c", child_pid);
 			fd = open(myfifo, O_WRONLY);
-			sprintf(msgData, "%s %s %s %d\n", curr->name, curr->secs, pidVal, child_pid);
-			write(fd, msgData, (strlen(msgData)+1));
-			close(fd);
+			if(fd){
+				sprintf(msgData, "%s %s %s %d\n", curr->name, curr->secs, pidVal, child_pid);
+				if(write(fd, msgData, (strlen(msgData)+1)) == -1) {clientNannySendDataToClerk("ERROR: Writing p2c", DEBUG);}
+				if(close(fd)){clientNannySendDataToClerk("ERROR: closing p2c fifo", DEBUG);}
+			} else {
+				clientNannySendDataToClerk("ERROR: opening p2c fifo", DEBUG);
+			}
 			
-			monLL_push(&monChild_head, (pid_t) atoi(pidVal), child_pid);
+			monLL_push(&monChild_head, (pid_t) atoi(pidVal), child_pid, curr->name, curr->secs);
 			// TELL CHILDPID TO MON pidVal
 		}
 	} else { /* Failure */
-		perror("Error: Fork Error");
+		clientNannySendDataToClerk("ERROR: Fork Error", DEBUG);
 		exit(1);
 	}
 }
 
+void killOldProcnannys(){
+	FILE* file;
+	extern FILE *popen();
+
+	sprintf(psLine, "%s", "ps -C procnanny -o pid="); //REMEMBER TO REPLACE TO USERNAME
+		if(!(file = popen(psLine, "r"))){
+			sprintf(msgData,"Error: Failed on popen of %s", psLine);
+			clientNannySendDataToClerk(msgData, BOTH);
+		} else {
+			sprintf(pidVal, "%s", "0");
+			while(fgets(pidVal, sizeof(pidVal), fpin)){
+				if(atoi(pidVal)){
+					strtok(pidVal, "\n");
+					pid_t proc_pid = (pid_t) strtol(pidVal, NULL, 10);
+					if (getpid() != proc_pid){
+						if(!kill(proc_pid, SIGKILL)){
+							sprintf(msgData, "Killed another Procnanny with pid: %d", proc_pid);
+							clientNannySendDataToClerk(msgData, BOTH);
+						}	
+					}
+				}
+			}
+		fclose(file);
+		}
+}
 

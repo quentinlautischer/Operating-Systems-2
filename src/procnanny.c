@@ -25,6 +25,9 @@ void signalCallbackHandler(int signum);
 char *configFileName;
 int killedProcesses;
 
+char *msgData;
+pid_t parent_pid;
+
 int main(int argc, char* argv[]){
 
 	signal(SIGINT, signalCallbackHandler);
@@ -42,8 +45,7 @@ int main(int argc, char* argv[]){
 
 		while(1){};
 
-		teardown();
-		
+	
 	}
 
 	return EXIT_SUCCESS;
@@ -55,14 +57,12 @@ void teardown(void){
 }
 
 void signalCallbackHandler(int signum){
-   char *data = (char*)malloc(1024 * sizeof(char));
-   sprintf(data, "Info: Caught SIGINT(%d). Exiting cleanly. %d process(es) killed.",signum, killedProcesses);
-   clerkNannyReceiveData(data, BOTH);
-   free(data);
-
-   teardown();
- 
-   exit(signum);
+	if(getpid() == parent_pid){
+		sprintf(msgData, "Info: Caught SIGINT. Exiting cleanly. %d process(es) killed.", killedProcesses);
+		clerkNannyReceiveData(msgData, BOTH);	
+	}
+	teardown();
+	exit(signum);
 }
 
 

@@ -1,6 +1,9 @@
 Debug: Log PATH:./logfile.log
-[Tue Nov 10 20:37:43 MST 2015] Info: Parent process is PID 26471
-[Tue Nov 10 20:38:31 MST 2015] Info: Caught SIGINT(2). Exiting cleanly. 1 process(es) killed.
-Debug: Log PATH:./logfile.log
-[Tue Nov 10 20:37:43 MST 2015] Info: Parent process is PID 26471
-[Tue Nov 10 20:38:31 MST 2015] Info: Caught SIGINT(2). Exiting cleanly. 0 process(es) killed.
+[Wed Nov 11 21:05:53 MST 2015] Info: Parent process is PID 10447
+[Wed Nov 11 21:05:53 MST 2015] Info: Parent process is PID 10447
+[Wed Nov 11 21:05:53 MST 2015] Info: No 'sleep5' processes found.
+[Wed Nov 11 21:05:53 MST 2015] Info: No 'sleep15' processes found.
+[Wed Nov 11 21:05:53 MST 2015] Info: No 'test1' processes found.
+[Wed Nov 11 21:05:53 MST 2015] Info: No 'test' processes found.
+[Wed Nov 11 21:05:53 MST 2015] Info: No 'a.out' processes found.
+[Wed Nov 11 21:05:57 MST 2015] Info: Caught SIGINT. Exiting cleanly. 0 process(es) killed.

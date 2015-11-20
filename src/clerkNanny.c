@@ -12,6 +12,8 @@ char *fileLine;
 FILE* logFile;
 FILE* configFile;
 
+int sighupFlag = 0;
+
 struct ConfigExtractedData {
 	char name[1024];
 	char secs[1024];
@@ -37,7 +39,7 @@ void clerkNannySetup(void){
 }
 
 void cleanLinkedList(void){
-	item * tmp = NULL;
+	item *tmp = NULL;
 	curr = head;
 	while(curr){
 		tmp = curr;
@@ -62,9 +64,8 @@ void clerkNannyTeardown(void){
 
 	free(configFileName);
 	free(fileLine);
-	fclose(logFile);
-	if(configFile != NULL){
-		fclose(configFile);
+	if(logFile != NULL){
+		fclose(logFile);
 	}
 }
 
@@ -80,7 +81,7 @@ void clerkNannyParseConfigFile(int signum){
 	clerkNannyPrint(configFileName, DEBUG);
 	configFile = fopen( configFileName, "r" );
 	if ( configFile == 0 ){
-		printf("Could not open config file\n" );
+		clerkNannyPrint("ERROR: Could not open config file\n", BOTH);
 	} else{
 		//Do work
 		if(head != NULL){
@@ -113,6 +114,7 @@ void clerkNannyParseConfigFile(int signum){
 	}
 	// clerkNannySerializeConfigData();
 	clerkNannySendDataToClient("");
+	sighupFlag = 1;
 	clientNannyCheckForProcesses(SIGALRM);
 }
 

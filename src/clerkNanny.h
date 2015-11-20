@@ -23,6 +23,6 @@ void clerkNannySerializeConfigData(void);
 
 enum LogType { LOGFILE, SYSTEM, BOTH, DEBUG };
 
-#define DEBUGLOGGINFLAG 1
+#define DEBUGLOGGINFLAG 0
 
 #endif 
